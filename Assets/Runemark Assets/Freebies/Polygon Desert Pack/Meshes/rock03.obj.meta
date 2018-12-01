@@ -1,23 +1,29 @@
 fileFormatVersion: 2
-guid: 5f2375e55a1913042a1f9c0fe18b5638
+guid: 900eb47d1ac08b645ab586656712ea99
 ModelImporter:
   serializedVersion: 24
   internalIDToNameTable:
   - first:
       1: 100000
+    second: default
+  - first:
+      1: 100002
     second: //RootNode
   - first:
       4: 400000
+    second: default
+  - first:
+      4: 400002
     second: //RootNode
   - first:
       23: 2300000
-    second: //RootNode
+    second: default
   - first:
       33: 3300000
-    second: //RootNode
+    second: default
   - first:
       43: 4300000
-    second: Cylinder.011
+    second: default
   externalObjects: {}
   materials:
     importMaterials: 1
