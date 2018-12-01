@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4309210895744930239}
   - component: {fileID: 4309210895744930238}
+  - component: {fileID: 6254008931628313948}
+  - component: {fileID: 44099373738415245}
+  - component: {fileID: 3923818093402381710}
   - component: {fileID: 4309210895744930237}
   - component: {fileID: 4309210895744930236}
   - component: {fileID: 4309210895744930243}
@@ -78,6 +81,127 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &6254008931628313948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309210895744930242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: bf5b97b13ec5bae41ac96a39caf39874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkinSettings:
+    Enabled: 1
+    Lut: {fileID: 2800000, guid: d13510bb2be49aa40a66a0101efb6a36, type: 3}
+    Weight: 1
+    MaskCutoff: 0.1
+    Bias: 0
+    Scale: 1
+    BumpBlur: 0.7
+    Absorption: {x: -8, y: -40, z: -64}
+    AoColorBleed: {x: 0.4, y: 0.15, z: 0.13}
+  TransmissionSettings:
+    Enabled: 1
+    Weight: 1
+    ShadowWeight: 0.5
+    BumpDistortion: 0.05
+    Falloff: 1
+  SkinLut: {fileID: 2800000, guid: d13510bb2be49aa40a66a0101efb6a36, type: 3}
+  TransmissionBlitShader: {fileID: 4800000, guid: 4bbeef29a84b4ed498f2d4a7d9fcefc4,
+    type: 3}
+  BlurNormalsShader: {fileID: 4800000, guid: 5b34ef975c671984fb9c93adc7042982, type: 3}
+--- !u!114 &44099373738415245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309210895744930242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 74503f0d6ab0001498c706c648ec881a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslucencyColor1: {r: 1, g: 1, b: 1, a: 1}
+  Strength1: 4
+  PointLightsDirectionality1: 0.7
+  Constant1: 0.1
+  Scattering1: 0.05
+  SpotExponent1: 30
+  SuppressShadows1: 0.5
+  NdotLReduction1: 0
+  TranslucencyColor2: {r: 1, g: 1, b: 1, a: 1}
+  Strength2: 4
+  PointLightsDirectionality2: 0.7
+  Constant2: 0.1
+  Scattering2: 0.05
+  SpotExponent2: 30
+  SuppressShadows2: 0.5
+  NdotLReduction2: 0
+  TranslucencyColor3: {r: 1, g: 1, b: 1, a: 1}
+  Strength3: 4
+  PointLightsDirectionality3: 0.7
+  Constant3: 0.1
+  Scattering3: 0.05
+  SpotExponent3: 30
+  SuppressShadows3: 0.5
+  NdotLReduction3: 0
+  TranslucencyColor4: {r: 1, g: 1, b: 1, a: 1}
+  Strength4: 4
+  PointLightsDirectionality4: 0.7
+  Constant4: 0.1
+  Scattering4: 0.05
+  SpotExponent4: 30
+  SuppressShadows4: 0.5
+  NdotLReduction4: 0
+  TranslucencyPropsTex: {fileID: 0}
+--- !u!114 &3923818093402381710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309210895744930242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 81375ce2e136fa848ae9f907781527ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaterLevel: 1
+  WetnessAmount: 1
+  flowTimeScale: 1
+  FlowBumpStrength: 1
+  RainIntensity: 1
+  SnowLevel: 1
+  Frost: 1
+  SnowDissolve: 2
+  SnowBumpMicro: 0.08
+  SnowSpecGloss: {r: 0.1, g: 0.1, b: 0.1, a: 0.15}
+  SnowGlitterColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.2}
+  SnowDissolveCover: 2
+  SnowBumpMicroCover: 0.08
+  SnowSpecGlossCover: {r: 0.1, g: 0.1, b: 0.1, a: 0.15}
+  SnowGlitterColorCover: {r: 0.8, g: 0.8, b: 0.8, a: 0.2}
+  SnowDissolveMelt: 0.3
+  SnowBumpMicroMelt: 0.02
+  SnowSpecGlossMelt: {r: 0.15, g: 0.15, b: 0.15, a: 0.6}
+  SnowGlitterColorMelt: {r: 0.1, g: 0.1, b: 0.1, a: 0.03}
+  Simulate: 0
+  fallIntensity: 0
+  temperature: 20
+  wind: 0
+  weatherTimeScale: 1
+  FreezeWetWhenSnowPresent: 1
+  AddWetWhenSnowPresent: 1
+  UseParticleSystem: 1
+  rainGameObject: {fileID: 177056, guid: 4f8f196b45b21dc4292c6f03987e8c39, type: 3}
+  snowGameObject: {fileID: 151460, guid: c42faef0e81a2ce44850bf01c985eab9, type: 3}
 --- !u!114 &4309210895744930237
 MonoBehaviour:
   m_ObjectHideFlags: 0
