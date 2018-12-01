@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public Vector2Int minMaxChildsPerGroup;
     public Transform flautistTransform;
     public Transform cameraTransform;
+    public Vector3 cameraOffset;
 
     void Awake()
     {
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour
         Vector3 flautistPos = flautistTransform.position;
 
         Vector3 futureCamPos = Vector3.Lerp(camPos, flautistPos, Time.deltaTime * 1.8f);
+        futureCamPos += cameraOffset;
+
         futureCamPos.y = camPos.y;
 
         cameraTransform.position = futureCamPos;
