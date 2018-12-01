@@ -26,11 +26,9 @@ public class GameManager : MonoBehaviour
         Vector3 flautistPos = flautistTransform.position;
 
         Vector3 futureCamPos = Vector3.Lerp(camPos, flautistPos, Time.deltaTime * 1.8f);
-        futureCamPos += cameraOffset;
-
         futureCamPos.y = camPos.y;
 
-        cameraTransform.position = futureCamPos;
+        cameraTransform.position = futureCamPos + cameraOffset;
     }
 
     void SpawnChildsOnPoint(Transform t)
