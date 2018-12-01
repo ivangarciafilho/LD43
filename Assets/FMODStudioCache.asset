@@ -73,7 +73,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 450
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7969107605475138333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +111,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &-6603697990923736846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: intensity
+  Min: 1
+  Max: 3
+  Default: 3
 --- !u!114 &-5706044804609976539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +182,26 @@ MonoBehaviour:
   Min: 1
   Max: 3
   Default: 3
+--- !u!114 &-4854418804840270914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: W:\LD43\Assets\FMOD\LD43\Build\Desktop\Master Bank.bank
+  lastModified: 636792724376458959
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
 --- !u!114 &-4616218136699932103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,14 +238,14 @@ MonoBehaviour:
   Path: event:/Music/bgm_gameplay01
   guid: 5a9cf7cb40252c45bb853b661d4d4ed3
   Banks:
-  - {fileID: -3010402408909564407}
+  - {fileID: 5477816116987246022}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -3977348631771234762}
-  - {fileID: -4492197395018829011}
-  - {fileID: 5989416732024221193}
+  - {fileID: 3233614559957318475}
+  - {fileID: -6603697990923736846}
+  - {fileID: 2510099644736659088}
   MinDistance: 0
   MaxDistance: 0
   Length: 34285
@@ -302,7 +339,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 2567584
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2756650421289877039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,14 +429,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 1173924908434123157}
-  - {fileID: -3010402408909564407}
-  - {fileID: 7514704412990037648}
-  - {fileID: -8192572994904771650}
+  - {fileID: 5477816116987246022}
+  - {fileID: -4854418804840270914}
+  - {fileID: 1645084734510999286}
   EditorEvents:
   - {fileID: -4584468925719065275}
-  MasterBankRef: {fileID: 7514704412990037648}
+  MasterBankRef: {fileID: -4854418804840270914}
   StringsBankRef: {fileID: 1173924908434123157}
-  stringsBankWriteTime: 636792695108233478
+  stringsBankWriteTime: 636792724376598877
   cacheVersion: 2
 --- !u!114 &204447403929675977
 MonoBehaviour:
@@ -455,11 +492,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD\LD43\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636792695108233478
+  lastModified: 636792724376598877
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 824
+  Exists: 1
+--- !u!114 &1645084734510999286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: W:\LD43\Assets\FMOD\LD43\Build\Desktop\sfx.bank
+  lastModified: 636792724457536691
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 450
   Exists: 1
 --- !u!114 &1727215346574454298
 MonoBehaviour:
@@ -478,7 +535,41 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &2510099644736659088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: flute
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &2652296746163951842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: tension
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &3233614559957318475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -586,6 +677,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2567584
   Exists: 0
+--- !u!114 &5477816116987246022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: W:\LD43\Assets\FMOD\LD43\Build\Desktop\music.bank
+  lastModified: 636792724457426771
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2567584
+  Exists: 1
 --- !u!114 &5642364082307764202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,7 +810,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 12474
-  Exists: 1
+  Exists: 0
 --- !u!114 &7878249257746808279
 MonoBehaviour:
   m_ObjectHideFlags: 0
