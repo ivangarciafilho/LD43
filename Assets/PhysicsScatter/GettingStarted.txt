@@ -1,0 +1,46 @@
+Hello and thank you for buying Physics Scatter!
+
+SCATTER 
+- Click on Windows->Physics Scatter to open the panel
+- Drag an object (in the scene on in the project foldit ers) and drop it just on the bottom of the drop icon button.
+- Left click anywhere in the scene to start scattering! You can change the random parameters for individual objects or for all of them (gloal settings). You can decide to limit your scattering to some of the object selected by toggling them in the dropping panel. 
+- You can use the Physics Scatter as a classic scattering tool by unchecking "Physics Scatter"
+- If the object falls indefinitively, it means that your floor doesn't have a collider. Remember to add it! 
+
+ROOT 
+- All the scattered objects will be childed into an automatically created root. You can create a change the root by selecting a different object in the hierarchy and pressing "mark as root". You can delete a root, deleting all the objects in it.
+- You can selectively delete objects in the root by pressing "Delete Rbody in root". Learn how to do this by shortcut, it will be useful when combined with effects!
+
+EFFECTS
+- You have access to three effects that you can change with several parameters. The editor will show a graphical rapresentations of these effects in the form of a sphere. The size of the sphere indicates the radius, the transparency its power, a dotted vertical line represents the vertical offset. For the simpleForce effect, you also have a line indicating the direction of the force.
+- Create amazing effects and stop them mid air! Apply the effect with SPACEBAR and once the objects are floating around press SHIFT+S to delete the rigidbody. In this way you can create amazing scenery for your game!
+
+
+- For any question, suggestions, or comment, go to the forum page! 
+https://forum.unity3d.com/threads/physics-scatter-scatter-object-in-the-editor-with-physics.488909/#post-3189060
+
+or write me directly! valerio.biscione@gmail.com 
+
+Enjoy! 
+
+Valerio Biscione, 20 August 2017, v1
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Version 1.1 
+- Buttons for deleting/adding colliders. When you have finished scatter the object in the scene within that root, you may want to delete the collider, 
+so that the collision status for those object is not going to be computed in Unity. This is optional.
+- Small improvement in labels for the GUI.
+16 July 2018
+
+ADDITIONAL INFO
+- When you scatter an object, a rigidbody and a collider component will be added to them if they are not present already. The added collider is a box collider. These will only be added to the scattered object, not to the prefab. 
+- If a MeshCollider is already present, then we set the MeshCollider.Convex to true and the MeshCollider.InflateMesh to true. This is done because collisions with non convex mesh colliders are not supported, and sometime just setting the mesh to convex will fail when the mesh contains too many vertex. Inflate mesh solve this second problem. 
+- When a rigidbody is already present, but is kinematic, the spawn object will have the same rigidbody, with kinematic set to false. 
+- If you don't really need to physically interact with the scattered objects in the scene (eg the user can see the object but won't touch interact with them), you can delete the rigidbody (but keep the collider). If you have to interact physically with the object, but you don't need the collider, then is suggested to delete it for efficiency. Do not delete both or the objects will fall off the ground! (try it! A window will warn you before this happens)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Explosion Icon and Drop Icon made by Freepik from www.flaticon.com 

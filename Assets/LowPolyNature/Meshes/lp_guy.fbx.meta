@@ -1,107 +1,299 @@
 fileFormatVersion: 2
 guid: 56be6f148bc409e4eb1a8144361f9fcd
-timeCreated: 1513884076
-licenseType: Store
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: arm.l
-    100002: arm.r
-    100004: arm_lower.l
-    100006: arm_lower.r
-    100008: chest
-    100010: finger.l
-    100012: finger.r
-    100014: finger_lower.l
-    100016: finger_lower.r
-    100018: foot.l
-    100020: foot.r
-    100022: foot_lower.l
-    100024: foot_lower.l.001
-    100026: foot_lower.r
-    100028: foot_lower.r.001
-    100030: hand.l
-    100032: hand.r
-    100034: head
-    100036: hips
-    100038: leg.l
-    100040: leg.r
-    100042: leg_lower.l
-    100044: leg_lower.r
-    100046: //RootNode
-    100048: lp_guy
-    100050: lp_guy_mesh
-    100052: neck
-    100054: shoulder.l
-    100056: shoulder.r
-    100058: spine
-    100060: thumb.l
-    100062: thumb.r
-    100064: thumb_lower.l
-    100066: thumb_lower.r
-    100068: finger_lower.l_end
-    100070: finger_lower.r_end
-    100072: foot_lower.l.001_end
-    100074: foot_lower.r.001_end
-    100076: head_end
-    100078: thumb_lower.l_end
-    100080: thumb_lower.r_end
-    400000: arm.l
-    400002: arm.r
-    400004: arm_lower.l
-    400006: arm_lower.r
-    400008: chest
-    400010: finger.l
-    400012: finger.r
-    400014: finger_lower.l
-    400016: finger_lower.r
-    400018: foot.l
-    400020: foot.r
-    400022: foot_lower.l
-    400024: foot_lower.l.001
-    400026: foot_lower.r
-    400028: foot_lower.r.001
-    400030: hand.l
-    400032: hand.r
-    400034: head
-    400036: hips
-    400038: leg.l
-    400040: leg.r
-    400042: leg_lower.l
-    400044: leg_lower.r
-    400046: //RootNode
-    400048: lp_guy
-    400050: lp_guy_mesh
-    400052: neck
-    400054: shoulder.l
-    400056: shoulder.r
-    400058: spine
-    400060: thumb.l
-    400062: thumb.r
-    400064: thumb_lower.l
-    400066: thumb_lower.r
-    400068: finger_lower.l_end
-    400070: finger_lower.r_end
-    400072: foot_lower.l.001_end
-    400074: foot_lower.r.001_end
-    400076: head_end
-    400078: thumb_lower.l_end
-    400080: thumb_lower.r_end
-    4300000: lp_guy_mesh
-    7400000: lp_guy|Idle
-    7400002: lp_guy|Run
-    7400004: lp_guy|Drop
-    7400006: lp_guy|Attack_1
-    7400008: lp_guy|Death
-    7400010: lp_guy|Idle-loop
-    7400012: lp_guy|Run-loop
-    7400014: lp_guy|Jump
-    7400016: lp_guy|Jump_End
-    7400018: lp_guy|Pickup
-    7400020: lp_guy|Talk1
-    7400022: lp_guy|OpenDoor
-    9500000: //RootNode
-    13700000: lp_guy_mesh
+  serializedVersion: 24
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: arm.l
+  - first:
+      1: 100002
+    second: arm.r
+  - first:
+      1: 100004
+    second: arm_lower.l
+  - first:
+      1: 100006
+    second: arm_lower.r
+  - first:
+      1: 100008
+    second: chest
+  - first:
+      1: 100010
+    second: finger.l
+  - first:
+      1: 100012
+    second: finger.r
+  - first:
+      1: 100014
+    second: finger_lower.l
+  - first:
+      1: 100016
+    second: finger_lower.r
+  - first:
+      1: 100018
+    second: foot.l
+  - first:
+      1: 100020
+    second: foot.r
+  - first:
+      1: 100022
+    second: foot_lower.l
+  - first:
+      1: 100024
+    second: foot_lower.l.001
+  - first:
+      1: 100026
+    second: foot_lower.r
+  - first:
+      1: 100028
+    second: foot_lower.r.001
+  - first:
+      1: 100030
+    second: hand.l
+  - first:
+      1: 100032
+    second: hand.r
+  - first:
+      1: 100034
+    second: head
+  - first:
+      1: 100036
+    second: hips
+  - first:
+      1: 100038
+    second: leg.l
+  - first:
+      1: 100040
+    second: leg.r
+  - first:
+      1: 100042
+    second: leg_lower.l
+  - first:
+      1: 100044
+    second: leg_lower.r
+  - first:
+      1: 100046
+    second: //RootNode
+  - first:
+      1: 100048
+    second: lp_guy
+  - first:
+      1: 100050
+    second: lp_guy_mesh
+  - first:
+      1: 100052
+    second: neck
+  - first:
+      1: 100054
+    second: shoulder.l
+  - first:
+      1: 100056
+    second: shoulder.r
+  - first:
+      1: 100058
+    second: spine
+  - first:
+      1: 100060
+    second: thumb.l
+  - first:
+      1: 100062
+    second: thumb.r
+  - first:
+      1: 100064
+    second: thumb_lower.l
+  - first:
+      1: 100066
+    second: thumb_lower.r
+  - first:
+      1: 100068
+    second: finger_lower.l_end
+  - first:
+      1: 100070
+    second: finger_lower.r_end
+  - first:
+      1: 100072
+    second: foot_lower.l.001_end
+  - first:
+      1: 100074
+    second: foot_lower.r.001_end
+  - first:
+      1: 100076
+    second: head_end
+  - first:
+      1: 100078
+    second: thumb_lower.l_end
+  - first:
+      1: 100080
+    second: thumb_lower.r_end
+  - first:
+      4: 400000
+    second: arm.l
+  - first:
+      4: 400002
+    second: arm.r
+  - first:
+      4: 400004
+    second: arm_lower.l
+  - first:
+      4: 400006
+    second: arm_lower.r
+  - first:
+      4: 400008
+    second: chest
+  - first:
+      4: 400010
+    second: finger.l
+  - first:
+      4: 400012
+    second: finger.r
+  - first:
+      4: 400014
+    second: finger_lower.l
+  - first:
+      4: 400016
+    second: finger_lower.r
+  - first:
+      4: 400018
+    second: foot.l
+  - first:
+      4: 400020
+    second: foot.r
+  - first:
+      4: 400022
+    second: foot_lower.l
+  - first:
+      4: 400024
+    second: foot_lower.l.001
+  - first:
+      4: 400026
+    second: foot_lower.r
+  - first:
+      4: 400028
+    second: foot_lower.r.001
+  - first:
+      4: 400030
+    second: hand.l
+  - first:
+      4: 400032
+    second: hand.r
+  - first:
+      4: 400034
+    second: head
+  - first:
+      4: 400036
+    second: hips
+  - first:
+      4: 400038
+    second: leg.l
+  - first:
+      4: 400040
+    second: leg.r
+  - first:
+      4: 400042
+    second: leg_lower.l
+  - first:
+      4: 400044
+    second: leg_lower.r
+  - first:
+      4: 400046
+    second: //RootNode
+  - first:
+      4: 400048
+    second: lp_guy
+  - first:
+      4: 400050
+    second: lp_guy_mesh
+  - first:
+      4: 400052
+    second: neck
+  - first:
+      4: 400054
+    second: shoulder.l
+  - first:
+      4: 400056
+    second: shoulder.r
+  - first:
+      4: 400058
+    second: spine
+  - first:
+      4: 400060
+    second: thumb.l
+  - first:
+      4: 400062
+    second: thumb.r
+  - first:
+      4: 400064
+    second: thumb_lower.l
+  - first:
+      4: 400066
+    second: thumb_lower.r
+  - first:
+      4: 400068
+    second: finger_lower.l_end
+  - first:
+      4: 400070
+    second: finger_lower.r_end
+  - first:
+      4: 400072
+    second: foot_lower.l.001_end
+  - first:
+      4: 400074
+    second: foot_lower.r.001_end
+  - first:
+      4: 400076
+    second: head_end
+  - first:
+      4: 400078
+    second: thumb_lower.l_end
+  - first:
+      4: 400080
+    second: thumb_lower.r_end
+  - first:
+      43: 4300000
+    second: lp_guy_mesh
+  - first:
+      74: 7400000
+    second: lp_guy|Idle
+  - first:
+      74: 7400002
+    second: lp_guy|Run
+  - first:
+      74: 7400004
+    second: lp_guy|Drop
+  - first:
+      74: 7400006
+    second: lp_guy|Attack_1
+  - first:
+      74: 7400008
+    second: lp_guy|Death
+  - first:
+      74: 7400010
+    second: lp_guy|Idle-loop
+  - first:
+      74: 7400012
+    second: lp_guy|Run-loop
+  - first:
+      74: 7400014
+    second: lp_guy|Jump
+  - first:
+      74: 7400016
+    second: lp_guy|Jump_End
+  - first:
+      74: 7400018
+    second: lp_guy|Pickup
+  - first:
+      74: 7400020
+    second: lp_guy|Talk1
+  - first:
+      74: 7400022
+    second: lp_guy|OpenDoor
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: lp_guy_mesh
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -131,6 +323,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -142,6 +335,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|Idle-loop
       takeName: lp_guy|Idle-loop
+      internalID: 7400010
       firstFrame: 0
       lastFrame: 100
       wrapMode: 0
@@ -170,6 +364,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|Run-loop
       takeName: lp_guy|Run-loop
+      internalID: 7400012
       firstFrame: 0
       lastFrame: 16
       wrapMode: 0
@@ -198,6 +393,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|Drop
       takeName: lp_guy|Drop
+      internalID: 7400004
       firstFrame: 0
       lastFrame: 16
       wrapMode: 0
@@ -226,6 +422,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|Attack_1
       takeName: lp_guy|Attack_1
+      internalID: 7400006
       firstFrame: 0
       lastFrame: 15
       wrapMode: 0
@@ -254,6 +451,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|Death
       takeName: lp_guy|Death
+      internalID: 7400008
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -282,6 +480,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|Jump
       takeName: lp_guy|Jump
+      internalID: 7400014
       firstFrame: 0
       lastFrame: 15
       wrapMode: 0
@@ -310,6 +509,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|Jump_End
       takeName: lp_guy|Jump_End
+      internalID: 7400016
       firstFrame: 0
       lastFrame: 13
       wrapMode: 0
@@ -352,6 +552,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|Pickup
       takeName: lp_guy|Pickup
+      internalID: 7400018
       firstFrame: 0
       lastFrame: 50
       wrapMode: 0
@@ -401,6 +602,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|Talk1
       takeName: lp_guy|Talk1
+      internalID: 7400020
       firstFrame: 0
       lastFrame: 45
       wrapMode: 0
@@ -429,6 +631,7 @@ ModelImporter:
     - serializedVersion: 16
       name: lp_guy|OpenDoor
       takeName: lp_guy|OpenDoor
+      internalID: 7400022
       firstFrame: 0
       lastFrame: 20
       wrapMode: 0
@@ -461,34 +664,43 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
-    secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
-    secondaryUVPackMargin: 4
+    secondaryUVAngleDistortion: 5
+    secondaryUVAreaDistortion: 5
+    secondaryUVHardAngle: 30
+    secondaryUVPackMargin: 8
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -503,7 +715,6 @@ ModelImporter:
     legStretch: 0.017
     feetSpacing: 0.198
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
