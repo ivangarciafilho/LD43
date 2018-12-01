@@ -1,0 +1,27 @@
+Lux Plus Version 2.02h
+# Lux Plus Standard shader: Emission fixed for Unity > 5.6.x.
+
+Lux Plus Version 2.02g
+# Lux Plus Deferred Reflection shader: Error in Unity 5.6.6 fixed.
+
+Lux Plus Version 2.02f
+# Lux Plus Standard shader: Shadow caster pass and instancing fixed.
+
+Lux Plus Version 2.02e
+# Hotfix for Unity 2017 added.
+
+Lux Plus Version 2.02d
+# Basic support for Unity 2018 added.
+# Fixed skin and anisotropic shading on Metal and OpenGLCore in Unity 2018.
+# Skin wrinkle maps shader added.
+# Support for Advanced Terrain Grass lighting added.
+
+
+Lux Plus Version 2.02c
+# Instancing and render queue fields added to Lux standard shader GUI
+# Tessellation slightly reworked: Now you can specify the desired tessellation factor which gets clamped by the edge length limit.
+# Global snow normals fixed for custom surface shaders.
+# Fixed missing melting snow to water feature on simple terrain shader example.
+
+KNOWN ISSUES
+# Custom Surface Shaders: When using Global snow mapping and diffuse scattering, the normal which is used to calculate the scattering does not contain the snow normal. It will be replaced by a flat normal - which is better than using the wrong underlying normal.

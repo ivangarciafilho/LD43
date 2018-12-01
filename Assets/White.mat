@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: White
-  m_Shader: {fileID: 4800000, guid: fd1b0c2328cad6942aa89eb15af421f0, type: 3}
-  m_ShaderKeywords: _WETNESS_NONE
+  m_Shader: {fileID: 4800000, guid: 2874913dbf861479d92020f8d2a4bc09, type: 3}
+  m_ShaderKeywords: _SNOW _WETNESS_FULL _WETNESS_NONE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -24,6 +24,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CombinedMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -120,6 +124,8 @@ Material:
     - _BendNormalsStrength: 0.05
     - _BumpScale: 1
     - _BumpScale2: 1
+    - _Cull: 2
+    - _CullShadowPass: 2
     - _CurvatureCustomU: 0
     - _CurvatureCustomV: 0
     - _CurvatureMultU: 1
@@ -138,10 +144,16 @@ Material:
     - _DetailSpecLerp: 1
     - _DetailUVMult: 1
     - _DiffuseScatter: 1
+    - _DiffuseScatteringBias: 0
+    - _DiffuseScatteringBias2: 0
+    - _DiffuseScatteringContraction: 8
+    - _DiffuseScatteringContraction2: 8
+    - _DiffuseScatteringEnabled: 0
     - _DiffuseScatteringExponent: 8
     - _DiffuseScatteringOffset: 0
     - _DistSteps: 64
     - _DistStepsShadows: 64
+    - _DoubleSided: 0
     - _DropletsAnimSpeed: 10
     - _DropletsTiling: 1
     - _DstBlend: 0
@@ -160,13 +172,21 @@ Material:
     - _GlossMapScale: 1
     - _GlossMax: 1
     - _GlossMin: 0
-    - _Glossiness: 0.5
+    - _Glossiness: 0.15
     - _Glossiness2: 1
     - _GlossyReflections: 1
+    - _Lighting: 0
+    - _LinearSteps: 20
+    - _Lux_FlowInterval: 1
+    - _Lux_FlowNormalStrength: 1
+    - _Lux_FlowNormalTiling: 2
+    - _Lux_FlowRefraction: 0.02
+    - _Lux_FlowSpeed: 0.05
     - _MainShown: 1
-    - _Metallic: 0
+    - _Metallic: 0.15
     - _Metallic2: 1
     - _MinPulseBrightness: 0
+    - _MixMappingControl: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _OcclusionStrength2: 0
@@ -184,9 +204,12 @@ Material:
     - _PanVSpeed: 0
     - _Parallax: 0.02
     - _Parallax2: 0.04
+    - _ParallaxTiling: 1
     - _Phong: 0
     - _Pierceable: 0
     - _PresetsShown: 0
+    - _PuddleMask: 0
+    - _PuddleMaskTiling: 1
     - _PulsateEmission: 0
     - _RainIntensity: 1
     - _RainIntensityFromGlobal: 0
@@ -200,6 +223,7 @@ Material:
     - _RippleStrength: 0.5
     - _RippleStrengthFromGlobal: 0
     - _RippleTiling: 1
+    - _ScatteringPower: 4
     - _SecOcclusionStrength: 0
     - _SecondaryShown: 1
     - _ShadowCull: 2
@@ -207,11 +231,12 @@ Material:
     - _ShadowStrength: 1
     - _SmoothnessTextureChannel: 0
     - _Smoothness_from_albedo_alpha: 0
-    - _Snow: 0
+    - _Snow: 1
     - _SnowBumpMacro: 0.1
     - _SnowBumpMicro: 0.08
     - _SnowBumpMicroFromGlobal: 0
     - _SnowDeepSmoothen: 4
+    - _SnowDetailStrength: 0.3
     - _SnowDiffuseScatteringExponent: 6
     - _SnowDiffuseScatteringOffset: 0.4
     - _SnowDissolve: 2
@@ -222,7 +247,10 @@ Material:
     - _SnowHeightThresholdTransition: 1000
     - _SnowLevelFromGlobal: 0
     - _SnowMacroTiling: 1
+    - _SnowMapping: 0
     - _SnowMicroTiling: 4
+    - _SnowNormalStrength: 1
+    - _SnowOpacity: 0.5
     - _SnowShown: 1
     - _SnowSlopeDamp: 2
     - _SnowSpecGlossFromGlobal: 0
@@ -231,6 +259,7 @@ Material:
     - _SoftnessFade: 0.4
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SyncWaterOfMaterials: 0
     - _Tan2ObjCustomU: 1
     - _Tan2ObjCustomV: 1
     - _Tan2ObjMultU: 1
@@ -254,9 +283,13 @@ Material:
     - _UVSecOcclusion: 0
     - _UVSecOcclusionLightmapPacked: 0
     - _UV_Clip: 0
+    - _UseCombinedMap: 0
+    - _UseMixMapping: 0
+    - _UsePOM: 0
+    - _WaterSlopeDamp: 0.5
     - _WetDroplets: 0
     - _WetRipples: 0
-    - _Wetness: 0
+    - _Wetness: 4
     - _WetnessConst: 0
     - _WetnessConstFromGlobal: 0
     - _WetnessDarkening: 2
@@ -281,21 +314,32 @@ Material:
     - _CutoffEdgeGlow: {r: 0, g: 0, b: 0, a: 0.02}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
     - _DetailSpecGloss: {r: 1, g: 1, b: 1, a: 1}
+    - _DiffuseScatteringCol: {r: 0, g: 0, b: 0, a: 0}
+    - _DiffuseScatteringCol2: {r: 0, g: 0, b: 0, a: 0}
     - _DiffuseScatteringColor: {r: 0, g: 0, b: 0, a: 0}
     - _DiffuseScatteringColor2: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GlitterColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.2}
     - _GlitterColor2: {r: 0.8, g: 0.8, b: 0.8, a: 0.2}
+    - _SnowAccumulation: {r: 0, g: 1, b: 0, a: 0}
     - _SnowColorAndCoverage: {r: 1, g: 1, b: 1, a: 1}
+    - _SnowDetailTiling: {r: 4, g: 4, b: 0, a: 0}
     - _SnowDiffuseScatteringColor: {r: 1, g: 1, b: 1, a: 0}
     - _SnowEmissionTransparency: {r: 0.09999997, g: 0.09999997, b: 0.09999997, a: 1}
     - _SnowGlitterColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.2}
+    - _SnowMaskTiling: {r: 0.3, g: 0.3, b: 0, a: 0}
     - _SnowSpecGloss: {r: 0.09999997, g: 0.09999997, b: 0.09999997, a: 0.15}
+    - _SnowTiling: {r: 2, g: 2, b: 0, a: 0}
     - _SnowTranslucencyColor: {r: 0.75, g: 1, b: 1, a: 1}
     - _Tan2ObjectMultOffset: {r: 1, g: 1, b: 0, a: 0}
     - _TranslucencyColor: {r: 1, g: 1, b: 1, a: 1}
     - _TranslucencyColor2: {r: 1, g: 1, b: 1, a: 1}
+    - _UVRatio: {r: 1, g: 1, b: 0, a: 0}
     - _UV_Clip_Borders: {r: 0, g: 0, b: 1, a: 1}
+    - _WaterAccumulationCracksPuddles: {r: 0, g: 1, b: 0, a: 1}
+    - _WaterAccumulationCracksPuddles2: {r: 0, g: 1, b: 0, a: 1}
+    - _WaterColor: {r: 0, g: 0, b: 0, a: 0}
+    - _WaterColor2: {r: 0, g: 0, b: 0, a: 0}
     - _WetnessColor: {r: 0, g: 0, b: 0, a: 0}
     - _WetnessSpecGloss: {r: 0.049999982, g: 0.049999982, b: 0.049999982, a: 0.7}
     - bumpMap2TexelSize: {r: 1, g: 1, b: 1, a: 1}
