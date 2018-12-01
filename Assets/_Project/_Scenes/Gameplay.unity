@@ -173,7 +173,7 @@ PrefabInstance:
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.013735291
+      value: 0.013735287
       objectReference: {fileID: 0}
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
@@ -183,7 +183,7 @@ PrefabInstance:
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0050055613
+      value: -0.00500556
       objectReference: {fileID: 0}
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
@@ -218,12 +218,17 @@ PrefabInstance:
     - target: {fileID: 4309210895744930238, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: far clip plane
-      value: 300
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4309210895744930238, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: field of view
       value: 58.992447
+      objectReference: {fileID: 0}
+    - target: {fileID: 4309210895744930238, guid: e5f13c24da191aa458673dfb144b8d1d,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5f13c24da191aa458673dfb144b8d1d, type: 3}
@@ -636,7 +641,7 @@ MonoBehaviour:
     FieldOfView: 40
     OrthographicSize: 10
     NearClipPlane: 0.01
-    FarClipPlane: 300
+    FarClipPlane: 150
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -656,7 +661,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774657115}
-  m_LocalRotation: {x: 0.013735291, y: 0.3423661, z: -0.0050055613, w: 0.93945295}
+  m_LocalRotation: {x: 0.013735287, y: 0.3423661, z: -0.00500556, w: 0.93945295}
   m_LocalPosition: {x: -130.52524, y: 1.005, z: 174.38545}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
