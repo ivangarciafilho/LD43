@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public Transform[] childGroupPoints;
     public Vector2Int minMaxChildsPerGroup;
     public Transform flautistTransform;
+	public Transform cauldronTransform;
+	public float cauldronRange = 18.0f;
 
     public PlayerController Player;
 
@@ -58,4 +60,12 @@ public class GameManager : MonoBehaviour
         }
     }
    
+   	void OnDrawGizmos()
+	{
+		if(cauldronTransform)
+		{
+			Gizmos.color = Color.cyan;
+			Gizmos.DrawWireSphere(cauldronTransform.position, cauldronRange);
+		}
+	}
 }

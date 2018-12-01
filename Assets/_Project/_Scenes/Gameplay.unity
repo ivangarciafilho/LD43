@@ -173,22 +173,22 @@ PrefabInstance:
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.3828031
+      value: 0.38280305
       objectReference: {fileID: 0}
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.33777678
+      value: 0.33777672
       objectReference: {fileID: 0}
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.15280691
+      value: -0.15280683
       objectReference: {fileID: 0}
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8461789
+      value: 0.84617895
       objectReference: {fileID: 0}
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
@@ -302,8 +302,10 @@ MonoBehaviour:
   - {fileID: 1835068188}
   - {fileID: 821151915}
   - {fileID: 1252902184}
-  minMaxChildsPerGroup: {x: 3, y: 8}
+  minMaxChildsPerGroup: {x: 3, y: 10}
   flautistTransform: {fileID: 1938513401}
+  cauldronTransform: {fileID: 1382712996}
+  cauldronRange: 6.5
   Player: {fileID: 1938513402}
 --- !u!4 &675222054
 Transform:
@@ -563,6 +565,36 @@ Transform:
   m_Father: {fileID: 2059799960}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1382712995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1382712996}
+  m_Layer: 0
+  m_Name: Cauldron
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1382712996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382712995}
+  m_LocalRotation: {x: -0, y: 0.34240335, z: -0, w: 0.9395531}
+  m_LocalPosition: {x: -128.529, y: 0.369, z: 178.326}
+  m_LocalScale: {x: 0.3, y: 0.25, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 40.047, z: 0}
 --- !u!1 &1583751161
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +688,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774657115}
-  m_LocalRotation: {x: 0.3828031, y: 0.33777678, z: -0.15280691, w: 0.8461789}
+  m_LocalRotation: {x: 0.38280305, y: 0.33777672, z: -0.15280683, w: 0.84617895}
   m_LocalPosition: {x: -131.26318, y: 6.52, z: 173.97371}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
