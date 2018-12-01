@@ -15,8 +15,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets\FMOD\LD43\LD43.fspro
-  SourceProjectPathUnformatted: Assets\FMOD\LD43\LD43.fspro
+  sourceProjectPath: Assets\FMOD\LD43\ludumdare43.fspro
+  SourceProjectPathUnformatted: Assets\FMOD\LD43\ludumdare43.fspro
   SourceBankPathUnformatted: Assets\FMOD\LD43\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
@@ -60,5 +60,5 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBank: 
+  MasterBank: Master Bank
   Banks: []
