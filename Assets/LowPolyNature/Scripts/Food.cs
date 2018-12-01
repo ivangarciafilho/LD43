@@ -10,7 +10,7 @@ public class Food : InventoryItemBase
     {
         GameManager.Instance.Player.Eat(FoodPoints);
 
-        GameManager.Instance.Player.Inventory.RemoveItem(this);
+       // GameManager.Instance.Player.Inventory.RemoveItem(this);
 
         Destroy(this.gameObject);
     }

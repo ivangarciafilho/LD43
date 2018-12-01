@@ -33,11 +33,11 @@ public class PlayerController : MonoBehaviour
 
     public float RotationSpeed = 240.0f;
 
-    public Inventory Inventory;
+    //public Inventory Inventory;
 
-    public GameObject Hand;
+    //public GameObject Hand;
 
-    public HUD Hud;
+   // public HUD Hud;
 
     public float JumpSpeed = 7.0f;
 
@@ -48,22 +48,22 @@ public class PlayerController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _characterController = GetComponent<CharacterController>();
-        Inventory.ItemUsed += Inventory_ItemUsed;
-        Inventory.ItemRemoved += Inventory_ItemRemoved;
+        //Inventory.ItemUsed += Inventory_ItemUsed;
+        //Inventory.ItemRemoved += Inventory_ItemRemoved;
 
-        mHealthBar = Hud.transform.Find("Bars_Panel/HealthBar").GetComponent<HealthBar>();
-        mHealthBar.Min = 0;
-        mHealthBar.Max = Health;
-        startHealth = Health;
-        mHealthBar.SetValue(Health);
+        //mHealthBar = Hud.transform.Find("Bars_Panel/HealthBar").GetComponent<HealthBar>();
+        //mHealthBar.Min = 0;
+        //mHealthBar.Max = Health;
+        //startHealth = Health;
+        //mHealthBar.SetValue(Health);
 
-        mFoodBar = Hud.transform.Find("Bars_Panel/FoodBar").GetComponent<HealthBar>();
-        mFoodBar.Min = 0;
-        mFoodBar.Max = Food;
-        startFood = Food;
-        mFoodBar.SetValue(Food);
+        //mFoodBar = Hud.transform.Find("Bars_Panel/FoodBar").GetComponent<HealthBar>();
+        //mFoodBar.Min = 0;
+        //mFoodBar.Max = Food;
+        //startFood = Food;
+        //mFoodBar.SetValue(Food);
 
-        InvokeRepeating("IncreaseHunger", 0, HungerRate);
+       // InvokeRepeating("IncreaseHunger", 0, HungerRate);
     }
 
     #region Inventory
@@ -80,9 +80,9 @@ public class PlayerController : MonoBehaviour
 
     private void SetItemActive(InventoryItemBase item, bool active)
     {
-        GameObject currentItem = (item as MonoBehaviour).gameObject;
-        currentItem.SetActive(active);
-        currentItem.transform.parent = active ? Hand.transform : null;
+        //GameObject currentItem = (item as MonoBehaviour).gameObject;
+        //currentItem.SetActive(active);
+        //currentItem.transform.parent = active ? Hand.transform : null;
     }
 
     private void Inventory_ItemUsed(object sender, InventoryEventArgs e)
@@ -122,20 +122,20 @@ public class PlayerController : MonoBehaviour
 
     public void DropCurrentItem()
     {
-        _animator.SetTrigger("tr_drop");
+        //_animator.SetTrigger("tr_drop");
 
-        GameObject goItem = (mCurrentItem as MonoBehaviour).gameObject;
+        //GameObject goItem = (mCurrentItem as MonoBehaviour).gameObject;
 
-        Inventory.RemoveItem(mCurrentItem);
+        //Inventory.RemoveItem(mCurrentItem);
 
-        // Throw animation
-        Rigidbody rbItem = goItem.AddComponent<Rigidbody>();
-        if (rbItem != null)
-        {
-            rbItem.AddForce(transform.forward * 2.0f, ForceMode.Impulse);
+        //// Throw animation
+        //Rigidbody rbItem = goItem.AddComponent<Rigidbody>();
+        //if (rbItem != null)
+        //{
+        //    rbItem.AddForce(transform.forward * 2.0f, ForceMode.Impulse);
 
-            Invoke("DoDropItem", 0.25f);
-        }
+        //    Invoke("DoDropItem", 0.25f);
+        //}
 
     }
 
@@ -329,53 +329,53 @@ public class PlayerController : MonoBehaviour
 
     public void InteractWithItem()
     {
-        if (mInteractItem != null)
-        {
-            mInteractItem.OnInteract();
+        //if (mInteractItem != null)
+        //{
+        //    mInteractItem.OnInteract();
 
-            if (mInteractItem is InventoryItemBase)
-            {
-                InventoryItemBase inventoryItem = mInteractItem as InventoryItemBase;
-                Inventory.AddItem(inventoryItem);
-                inventoryItem.OnPickup();
+        //    if (mInteractItem is InventoryItemBase)
+        //    {
+        //        InventoryItemBase inventoryItem = mInteractItem as InventoryItemBase;
+        //        Inventory.AddItem(inventoryItem);
+        //        inventoryItem.OnPickup();
 
-                if (inventoryItem.UseItemAfterPickup)
-                {
-                    Inventory.UseItem(inventoryItem);
-                }
-            }
-        }
+        //        if (inventoryItem.UseItemAfterPickup)
+        //        {
+        //            Inventory.UseItem(inventoryItem);
+        //        }
+        //    }
+        //}
 
-        Hud.CloseMessagePanel();
+        //Hud.CloseMessagePanel();
 
-        mInteractItem = null;
+        //mInteractItem = null;
     }
 
     private InteractableItemBase mInteractItem = null;
 
     private void OnTriggerEnter(Collider other)
     {
-        InteractableItemBase item = other.GetComponent<InteractableItemBase>();
+        //InteractableItemBase item = other.GetComponent<InteractableItemBase>();
 
-        if (item != null)
-        {
-            if (item.CanInteract(other))
-            {
+        //if (item != null)
+        //{
+        //    if (item.CanInteract(other))
+        //    {
 
-                mInteractItem = item;
+        //        mInteractItem = item;
 
-                Hud.OpenMessagePanel(mInteractItem);
-            }
-        }
+        //        Hud.OpenMessagePanel(mInteractItem);
+        //    }
+        //}
     }
 
     private void OnTriggerExit(Collider other)
     {
-        InteractableItemBase item = other.GetComponent<InteractableItemBase>();
-        if (item != null)
-        {
-            Hud.CloseMessagePanel();
-            mInteractItem = null;
-        }
+        //InteractableItemBase item = other.GetComponent<InteractableItemBase>();
+        //if (item != null)
+        //{
+        //    Hud.CloseMessagePanel();
+        //    mInteractItem = null;
+        //}
     }
 }

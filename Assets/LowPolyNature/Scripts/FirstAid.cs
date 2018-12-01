@@ -8,9 +8,9 @@ public class FirstAid : InventoryItemBase
 
     public override void OnUse()
     {
-        GameManager.Instance.Player.Rehab(HealthPoints);
+        //GameManager.Instance.Player.Rehab(HealthPoints);
 
-        GameManager.Instance.Player.Inventory.RemoveItem(this);
+        //GameManager.Instance.Player.Inventory.RemoveItem(this);
 
         Destroy(this.gameObject);
     }

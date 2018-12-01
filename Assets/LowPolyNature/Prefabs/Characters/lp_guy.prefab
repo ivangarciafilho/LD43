@@ -561,6 +561,7 @@ GameObject:
   - component: {fileID: 143857133471581462}
   - component: {fileID: 65069898044060218}
   - component: {fileID: 114776834927309406}
+  - component: {fileID: 4523798739620730916}
   m_Layer: 0
   m_Name: lp_guy
   m_TagString: Player
@@ -665,13 +666,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   RotationSpeed: 280
-  Inventory: {fileID: 0}
-  Hand: {fileID: 1364607010040684}
-  Hud: {fileID: 0}
   JumpSpeed: 7
   Health: 100
   Food: 100
   HungerRate: 0.5
+--- !u!208 &4523798739620730916
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438851699991618}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.1, y: 0.5, z: 1.1}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.4, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1497685537408412
 GameObject:
   m_ObjectHideFlags: 0

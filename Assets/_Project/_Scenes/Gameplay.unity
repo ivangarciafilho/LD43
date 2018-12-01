@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: b543d8d706a65934f8ad73ebbedb0489, type: 2}
 --- !u!1 &3627716
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,11 +204,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fec91248bae2448bee63015dcd2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  childPrefab: {fileID: 0}
-  childGroupPoints: []
-  minMaxChildsPerGroup: {x: 0, y: 0}
+  childPrefab: {fileID: 8634911002600298319, guid: 7c74253e9b4b5854cb24664f45f140b0,
+    type: 3}
+  childGroupPoints:
+  - {fileID: 3627717}
+  - {fileID: 1918993285}
+  - {fileID: 1830037372}
+  - {fileID: 971193614}
+  - {fileID: 1272986532}
+  - {fileID: 832957287}
+  - {fileID: 1583751162}
+  - {fileID: 2036748626}
+  - {fileID: 1835068188}
+  - {fileID: 821151915}
+  - {fileID: 1252902184}
+  minMaxChildsPerGroup: {x: 3, y: 8}
   flautistTransform: {fileID: 1938513401}
-  Player: {fileID: 0}
+  Player: {fileID: 1938513402}
 --- !u!4 &675222054
 Transform:
   m_ObjectHideFlags: 0
@@ -578,6 +590,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1938513400}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1938513402 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114776834927309406, guid: fbc08fd83daf78c4483cae67db92c0e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1938513400}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 3f769344a18165840a13d2288152bea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2036748625
 GameObject:
   m_ObjectHideFlags: 0
