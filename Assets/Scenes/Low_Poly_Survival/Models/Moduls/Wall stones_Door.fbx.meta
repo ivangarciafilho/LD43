@@ -1,60 +1,164 @@
 fileFormatVersion: 2
 guid: 052768942f254e249bd8b119e1d03dd5
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Door.001
-    100002: Wall stones.017
-    100004: Wall stones.019
-    100006: Wall stones.020
-    100008: Wall stones.021
-    100010: Wall stones.022
-    100012: Wall stones.023
-    100014: Wall stones.024
-    100016: Wall stones_Door
-    100018: //RootNode
-    400000: Door.001
-    400002: Wall stones.017
-    400004: Wall stones.019
-    400006: Wall stones.020
-    400008: Wall stones.021
-    400010: Wall stones.022
-    400012: Wall stones.023
-    400014: Wall stones.024
-    400016: Wall stones_Door
-    400018: //RootNode
-    2100000: Materials
-    2100002: Material.003
-    2100004: No Name
-    2100006: Material.004
-    2100008: Material.002
-    2300000: Door.001
-    2300002: Wall stones.017
-    2300004: Wall stones.019
-    2300006: Wall stones.020
-    2300008: Wall stones.021
-    2300010: Wall stones.022
-    2300012: Wall stones.023
-    2300014: Wall stones.024
-    2300016: Wall stones_Door
-    3300000: Door.001
-    3300002: Wall stones.017
-    3300004: Wall stones.019
-    3300006: Wall stones.020
-    3300008: Wall stones.021
-    3300010: Wall stones.022
-    3300012: Wall stones.023
-    3300014: Wall stones.024
-    3300016: Wall stones_Door
-    4300000: Wall stones_Door
-    4300002: Wall stones.024
-    4300004: Wall stones.023
-    4300006: Wall stones.022
-    4300008: Wall stones.021
-    4300010: Wall stones.020
-    4300012: Wall stones.019
-    4300014: Wall stones.017
-    4300016: Door.001
+  serializedVersion: 24
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Door.001
+  - first:
+      1: 100002
+    second: Wall stones.017
+  - first:
+      1: 100004
+    second: Wall stones.019
+  - first:
+      1: 100006
+    second: Wall stones.020
+  - first:
+      1: 100008
+    second: Wall stones.021
+  - first:
+      1: 100010
+    second: Wall stones.022
+  - first:
+      1: 100012
+    second: Wall stones.023
+  - first:
+      1: 100014
+    second: Wall stones.024
+  - first:
+      1: 100016
+    second: Wall stones_Door
+  - first:
+      1: 100018
+    second: //RootNode
+  - first:
+      4: 400000
+    second: Door.001
+  - first:
+      4: 400002
+    second: Wall stones.017
+  - first:
+      4: 400004
+    second: Wall stones.019
+  - first:
+      4: 400006
+    second: Wall stones.020
+  - first:
+      4: 400008
+    second: Wall stones.021
+  - first:
+      4: 400010
+    second: Wall stones.022
+  - first:
+      4: 400012
+    second: Wall stones.023
+  - first:
+      4: 400014
+    second: Wall stones.024
+  - first:
+      4: 400016
+    second: Wall stones_Door
+  - first:
+      4: 400018
+    second: //RootNode
+  - first:
+      21: 2100000
+    second: Materials
+  - first:
+      21: 2100002
+    second: Material.003
+  - first:
+      21: 2100004
+    second: No Name
+  - first:
+      21: 2100006
+    second: Material.004
+  - first:
+      21: 2100008
+    second: Material.002
+  - first:
+      23: 2300000
+    second: Door.001
+  - first:
+      23: 2300002
+    second: Wall stones.017
+  - first:
+      23: 2300004
+    second: Wall stones.019
+  - first:
+      23: 2300006
+    second: Wall stones.020
+  - first:
+      23: 2300008
+    second: Wall stones.021
+  - first:
+      23: 2300010
+    second: Wall stones.022
+  - first:
+      23: 2300012
+    second: Wall stones.023
+  - first:
+      23: 2300014
+    second: Wall stones.024
+  - first:
+      23: 2300016
+    second: Wall stones_Door
+  - first:
+      33: 3300000
+    second: Door.001
+  - first:
+      33: 3300002
+    second: Wall stones.017
+  - first:
+      33: 3300004
+    second: Wall stones.019
+  - first:
+      33: 3300006
+    second: Wall stones.020
+  - first:
+      33: 3300008
+    second: Wall stones.021
+  - first:
+      33: 3300010
+    second: Wall stones.022
+  - first:
+      33: 3300012
+    second: Wall stones.023
+  - first:
+      33: 3300014
+    second: Wall stones.024
+  - first:
+      33: 3300016
+    second: Wall stones_Door
+  - first:
+      43: 4300000
+    second: Wall stones_Door
+  - first:
+      43: 4300002
+    second: Wall stones.024
+  - first:
+      43: 4300004
+    second: Wall stones.023
+  - first:
+      43: 4300006
+    second: Wall stones.022
+  - first:
+      43: 4300008
+    second: Wall stones.021
+  - first:
+      43: 4300010
+    second: Wall stones.020
+  - first:
+      43: 4300012
+    second: Wall stones.019
+  - first:
+      43: 4300014
+    second: Wall stones.017
+  - first:
+      43: 4300016
+    second: Door.001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -83,28 +187,32 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
-    secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
-    secondaryUVPackMargin: 4
+    secondaryUVAngleDistortion: 5
+    secondaryUVAreaDistortion: 5
+    secondaryUVHardAngle: 30
+    secondaryUVPackMargin: 8
     useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
@@ -113,7 +221,10 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -127,7 +238,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

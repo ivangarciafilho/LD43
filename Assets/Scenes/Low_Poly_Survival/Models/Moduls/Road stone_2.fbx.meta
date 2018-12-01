@@ -1,51 +1,137 @@
 fileFormatVersion: 2
 guid: bb24d3bd512e30f43ad22514f91edd77
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: road stone
-    100002: road stone_1
-    100004: //RootNode
-    100006: road stone_2
-    100008: road stone_3
-    100010: road stone_4
-    100012: road stone_5
-    100014: road stone_7
-    100016: road stone_8
-    400000: road stone
-    400002: road stone_1
-    400004: //RootNode
-    400006: road stone_2
-    400008: road stone_3
-    400010: road stone_4
-    400012: road stone_5
-    400014: road stone_7
-    400016: road stone_8
-    2100000: No Name
-    2300000: road stone
-    2300002: road stone_1
-    2300004: road stone_2
-    2300006: road stone_3
-    2300008: road stone_4
-    2300010: road stone_5
-    2300012: road stone_7
-    2300014: road stone_8
-    3300000: road stone
-    3300002: road stone_1
-    3300004: road stone_2
-    3300006: road stone_3
-    3300008: road stone_4
-    3300010: road stone_5
-    3300012: road stone_7
-    3300014: road stone_8
-    4300000: road stone
-    4300002: road stone_4
-    4300004: road stone_3
-    4300006: road stone_1
-    4300008: road stone_5
-    4300010: road stone_8
-    4300012: road stone_2
-    4300014: road stone_7
+  serializedVersion: 24
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: road stone
+  - first:
+      1: 100002
+    second: road stone_1
+  - first:
+      1: 100004
+    second: //RootNode
+  - first:
+      1: 100006
+    second: road stone_2
+  - first:
+      1: 100008
+    second: road stone_3
+  - first:
+      1: 100010
+    second: road stone_4
+  - first:
+      1: 100012
+    second: road stone_5
+  - first:
+      1: 100014
+    second: road stone_7
+  - first:
+      1: 100016
+    second: road stone_8
+  - first:
+      4: 400000
+    second: road stone
+  - first:
+      4: 400002
+    second: road stone_1
+  - first:
+      4: 400004
+    second: //RootNode
+  - first:
+      4: 400006
+    second: road stone_2
+  - first:
+      4: 400008
+    second: road stone_3
+  - first:
+      4: 400010
+    second: road stone_4
+  - first:
+      4: 400012
+    second: road stone_5
+  - first:
+      4: 400014
+    second: road stone_7
+  - first:
+      4: 400016
+    second: road stone_8
+  - first:
+      21: 2100000
+    second: No Name
+  - first:
+      23: 2300000
+    second: road stone
+  - first:
+      23: 2300002
+    second: road stone_1
+  - first:
+      23: 2300004
+    second: road stone_2
+  - first:
+      23: 2300006
+    second: road stone_3
+  - first:
+      23: 2300008
+    second: road stone_4
+  - first:
+      23: 2300010
+    second: road stone_5
+  - first:
+      23: 2300012
+    second: road stone_7
+  - first:
+      23: 2300014
+    second: road stone_8
+  - first:
+      33: 3300000
+    second: road stone
+  - first:
+      33: 3300002
+    second: road stone_1
+  - first:
+      33: 3300004
+    second: road stone_2
+  - first:
+      33: 3300006
+    second: road stone_3
+  - first:
+      33: 3300008
+    second: road stone_4
+  - first:
+      33: 3300010
+    second: road stone_5
+  - first:
+      33: 3300012
+    second: road stone_7
+  - first:
+      33: 3300014
+    second: road stone_8
+  - first:
+      43: 4300000
+    second: road stone
+  - first:
+      43: 4300002
+    second: road stone_4
+  - first:
+      43: 4300004
+    second: road stone_3
+  - first:
+      43: 4300006
+    second: road stone_1
+  - first:
+      43: 4300008
+    second: road stone_5
+  - first:
+      43: 4300010
+    second: road stone_8
+  - first:
+      43: 4300012
+    second: road stone_2
+  - first:
+      43: 4300014
+    second: road stone_7
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -74,28 +160,32 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
-    secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
-    secondaryUVPackMargin: 4
+    secondaryUVAngleDistortion: 5
+    secondaryUVAreaDistortion: 5
+    secondaryUVHardAngle: 30
+    secondaryUVPackMargin: 8
     useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
@@ -104,7 +194,10 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -118,7 +211,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

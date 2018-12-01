@@ -1,52 +1,140 @@
 fileFormatVersion: 2
 guid: eb76af53d2874ae4180dd3e91647cf88
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Wall stones.001
-    100002: Wall stones.011
-    100004: Wall stones.012
-    100006: Wall stones.013
-    100008: Wall stones.014
-    100010: Wall stones.015
-    100012: Wall stones.016
-    100014: //RootNode
-    100016: Wall stones_Window
-    400000: Wall stones.001
-    400002: Wall stones.011
-    400004: Wall stones.012
-    400006: Wall stones.013
-    400008: Wall stones.014
-    400010: Wall stones.015
-    400012: Wall stones.016
-    400014: Wall stones_Window
-    400016: //RootNode
-    2100000: No Name
-    2100002: Materials
-    2300000: Wall stones.001
-    2300002: Wall stones.011
-    2300004: Wall stones.012
-    2300006: Wall stones.013
-    2300008: Wall stones.014
-    2300010: Wall stones.015
-    2300012: Wall stones.016
-    2300014: Wall stones_Window
-    3300000: Wall stones.001
-    3300002: Wall stones.011
-    3300004: Wall stones.012
-    3300006: Wall stones.013
-    3300008: Wall stones.014
-    3300010: Wall stones.015
-    3300012: Wall stones.016
-    3300014: Wall stones_Window
-    4300000: Wall stones.016
-    4300002: Wall stones.015
-    4300004: Wall stones.014
-    4300006: Wall stones.013
-    4300008: Wall stones.012
-    4300010: Wall stones.011
-    4300012: Wall stones.001
-    4300014: Wall stones_Window
+  serializedVersion: 24
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Wall stones.001
+  - first:
+      1: 100002
+    second: Wall stones.011
+  - first:
+      1: 100004
+    second: Wall stones.012
+  - first:
+      1: 100006
+    second: Wall stones.013
+  - first:
+      1: 100008
+    second: Wall stones.014
+  - first:
+      1: 100010
+    second: Wall stones.015
+  - first:
+      1: 100012
+    second: Wall stones.016
+  - first:
+      1: 100014
+    second: //RootNode
+  - first:
+      1: 100016
+    second: Wall stones_Window
+  - first:
+      4: 400000
+    second: Wall stones.001
+  - first:
+      4: 400002
+    second: Wall stones.011
+  - first:
+      4: 400004
+    second: Wall stones.012
+  - first:
+      4: 400006
+    second: Wall stones.013
+  - first:
+      4: 400008
+    second: Wall stones.014
+  - first:
+      4: 400010
+    second: Wall stones.015
+  - first:
+      4: 400012
+    second: Wall stones.016
+  - first:
+      4: 400014
+    second: Wall stones_Window
+  - first:
+      4: 400016
+    second: //RootNode
+  - first:
+      21: 2100000
+    second: No Name
+  - first:
+      21: 2100002
+    second: Materials
+  - first:
+      23: 2300000
+    second: Wall stones.001
+  - first:
+      23: 2300002
+    second: Wall stones.011
+  - first:
+      23: 2300004
+    second: Wall stones.012
+  - first:
+      23: 2300006
+    second: Wall stones.013
+  - first:
+      23: 2300008
+    second: Wall stones.014
+  - first:
+      23: 2300010
+    second: Wall stones.015
+  - first:
+      23: 2300012
+    second: Wall stones.016
+  - first:
+      23: 2300014
+    second: Wall stones_Window
+  - first:
+      33: 3300000
+    second: Wall stones.001
+  - first:
+      33: 3300002
+    second: Wall stones.011
+  - first:
+      33: 3300004
+    second: Wall stones.012
+  - first:
+      33: 3300006
+    second: Wall stones.013
+  - first:
+      33: 3300008
+    second: Wall stones.014
+  - first:
+      33: 3300010
+    second: Wall stones.015
+  - first:
+      33: 3300012
+    second: Wall stones.016
+  - first:
+      33: 3300014
+    second: Wall stones_Window
+  - first:
+      43: 4300000
+    second: Wall stones.016
+  - first:
+      43: 4300002
+    second: Wall stones.015
+  - first:
+      43: 4300004
+    second: Wall stones.014
+  - first:
+      43: 4300006
+    second: Wall stones.013
+  - first:
+      43: 4300008
+    second: Wall stones.012
+  - first:
+      43: 4300010
+    second: Wall stones.011
+  - first:
+      43: 4300012
+    second: Wall stones.001
+  - first:
+      43: 4300014
+    second: Wall stones_Window
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -75,28 +163,32 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
-    secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
-    secondaryUVPackMargin: 4
+    secondaryUVAngleDistortion: 5
+    secondaryUVAreaDistortion: 5
+    secondaryUVHardAngle: 30
+    secondaryUVPackMargin: 8
     useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
@@ -105,7 +197,10 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -119,7 +214,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
