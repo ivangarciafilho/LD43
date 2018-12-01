@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 	public float cauldronRange = 18.0f;
 
     public PlayerController Player;
+	public float playerRange = 5;
 
     void Awake()
     {
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < childGroupPoints.Length; i++)
         {
-            SpawnChildsOnPoint(childGroupPoints[i]);
+            SpawnChildsOnPoint(childGroupPoints[i], i);
         }
     }
 
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void SpawnChildsOnPoint(Transform t)
+    void SpawnChildsOnPoint(Transform t, int index)
     {
         int childCount = Random.Range(minMaxChildsPerGroup.x, minMaxChildsPerGroup.y);
         Vector3 p = t.position;
@@ -52,13 +53,22 @@ public class GameManager : MonoBehaviour
             Vector3 pos = new Vector3(p.x + Random.Range(-4, 4), p.y, p.z + Random.Range(-4, 4));
 
             Child child = Instantiate(childPrefab, pos, Quaternion.identity).GetComponent<Child>();
-
+			child.transform.SetParent(t);
+			child.parentTransformIndex = index;
+			
             child.target = flautistTransform;
-
-            NavMeshAgent agent = child.GetComponent<NavMeshAgent>();
-
         }
     }
+	
+	public void ReplaceChild(Child child)
+	{
+		Vector3 p = childGroupPoints[child.parentTransformIndex].position;
+		Vector3 pos = new Vector3(p.x + Random.Range(-4, 4), p.y, p.z + Random.Range(-4, 4));
+		
+		child.target = flautistTransform;
+		child.transform.position = pos;
+		child.gameObject.SetActive(true);
+	}
    
    	void OnDrawGizmos()
 	{

@@ -6,11 +6,12 @@ using UnityEngine.AI;
 public class Child : MonoBehaviour
 {
 	public Transform target;
+	public int parentTransformIndex;
 	public NavMeshAgent agent;
 
     bool follow;
 	
-	void Start()
+	void OnEnable()
 	{
 		agent.speed = Random.Range(agent.speed, agent.speed + 5);
 	}
@@ -18,7 +19,7 @@ public class Child : MonoBehaviour
     void LateUpdate()
     {
 		float dist = (target.position - transform.position).magnitude;
-        if (dist < 7)
+        if (dist < GameManager.Instance.playerRange)
             follow = true;
 
 		if(follow)
@@ -31,9 +32,11 @@ public class Child : MonoBehaviour
 				target = GameManager.Instance.cauldronTransform;
 				agent.stoppingDistance = 0;
 				
-				if(dist < 1)
+				if(dist <= 0.98)
 				{
+					follow = false;
 					gameObject.SetActive(false);
+					GameManager.Instance.ReplaceChild(this);
 				}
 			}
 		}
