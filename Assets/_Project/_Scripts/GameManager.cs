@@ -5,15 +5,30 @@ using UnityEngine.AI;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance = null;
+
     public GameObject childPrefab;
     public Transform[] childGroupPoints;
     public Vector2Int minMaxChildsPerGroup;
     public Transform flautistTransform;
-    public Transform cameraTransform;
-    public Vector3 cameraOffset;
+
+    public PlayerController Player;
 
     void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        // Dont destroy on reloading the scene
+        DontDestroyOnLoad(gameObject);
+
         for (int i = 0; i < childGroupPoints.Length; i++)
         {
             SpawnChildsOnPoint(childGroupPoints[i]);
@@ -22,13 +37,7 @@ public class GameManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector3 camPos = cameraTransform.position;
-        Vector3 flautistPos = flautistTransform.position;
-
-        Vector3 futureCamPos = Vector3.Lerp(camPos, flautistPos, Time.deltaTime * 1.8f);
-        futureCamPos.y = camPos.y;
-
-        cameraTransform.position = futureCamPos + cameraOffset;
+        
     }
 
     void SpawnChildsOnPoint(Transform t)
