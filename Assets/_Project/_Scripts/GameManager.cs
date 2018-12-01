@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public Transform[] childGroupPoints;
     public Vector2Int minMaxChildsPerGroup;
     public Transform flautistTransform;
+    public Transform cameraTransform;
 
     void Awake()
     {
@@ -16,6 +17,17 @@ public class GameManager : MonoBehaviour
         {
             SpawnChildsOnPoint(childGroupPoints[i]);
         }
+    }
+
+    private void LateUpdate()
+    {
+        Vector3 camPos = cameraTransform.position;
+        Vector3 flautistPos = flautistTransform.position;
+
+        Vector3 futureCamPos = Vector3.Lerp(camPos, flautistPos, Time.deltaTime * 1.8f);
+        futureCamPos.y = camPos.y;
+
+        cameraTransform.position = futureCamPos;
     }
 
     void SpawnChildsOnPoint(Transform t)
