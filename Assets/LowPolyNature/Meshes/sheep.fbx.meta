@@ -1,59 +1,155 @@
 fileFormatVersion: 2
 guid: c8d4652e5cde75349a93a2d9c63befe4
-timeCreated: 1523463498
-licenseType: Store
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: Bone.001
-    100002: Bone.002
-    100004: Bone.003
-    100006: Bone.004
-    100008: Bone.005
-    100010: Bone.006
-    100012: Bone.007
-    100014: Bone.008
-    100016: Bone.009
-    100018: Bone.010
-    100020: Bone.011
-    100022: Bone.013
-    100024: Bone.014
-    100026: Bone.015
-    100028: Bone.016
-    100030: Bone.017
-    100032: Root
-    100034: Sheep
-    100036: //RootNode
-    100038: sheep_mesh
-    400000: Bone.001
-    400002: Bone.002
-    400004: Bone.003
-    400006: Bone.004
-    400008: Bone.005
-    400010: Bone.006
-    400012: Bone.007
-    400014: Bone.008
-    400016: Bone.009
-    400018: Bone.010
-    400020: Bone.011
-    400022: Bone.013
-    400024: Bone.014
-    400026: Bone.015
-    400028: Bone.016
-    400030: Bone.017
-    400032: Root
-    400034: Sheep
-    400036: //RootNode
-    400038: sheep_mesh
-    2100000: matLowPoly
-    4300000: sheep_mesh
-    7400000: Sheep|Cube.001Action.002
-    7400002: Sheep|Idle
-    7400004: Sheep|terrain_riverAction
-    7400006: Sheep|Walk
-    7400008: Sheep|Die
-    9500000: //RootNode
-    13700000: sheep_mesh
+  serializedVersion: 24
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bone.001
+  - first:
+      1: 100002
+    second: Bone.002
+  - first:
+      1: 100004
+    second: Bone.003
+  - first:
+      1: 100006
+    second: Bone.004
+  - first:
+      1: 100008
+    second: Bone.005
+  - first:
+      1: 100010
+    second: Bone.006
+  - first:
+      1: 100012
+    second: Bone.007
+  - first:
+      1: 100014
+    second: Bone.008
+  - first:
+      1: 100016
+    second: Bone.009
+  - first:
+      1: 100018
+    second: Bone.010
+  - first:
+      1: 100020
+    second: Bone.011
+  - first:
+      1: 100022
+    second: Bone.013
+  - first:
+      1: 100024
+    second: Bone.014
+  - first:
+      1: 100026
+    second: Bone.015
+  - first:
+      1: 100028
+    second: Bone.016
+  - first:
+      1: 100030
+    second: Bone.017
+  - first:
+      1: 100032
+    second: Root
+  - first:
+      1: 100034
+    second: Sheep
+  - first:
+      1: 100036
+    second: //RootNode
+  - first:
+      1: 100038
+    second: sheep_mesh
+  - first:
+      4: 400000
+    second: Bone.001
+  - first:
+      4: 400002
+    second: Bone.002
+  - first:
+      4: 400004
+    second: Bone.003
+  - first:
+      4: 400006
+    second: Bone.004
+  - first:
+      4: 400008
+    second: Bone.005
+  - first:
+      4: 400010
+    second: Bone.006
+  - first:
+      4: 400012
+    second: Bone.007
+  - first:
+      4: 400014
+    second: Bone.008
+  - first:
+      4: 400016
+    second: Bone.009
+  - first:
+      4: 400018
+    second: Bone.010
+  - first:
+      4: 400020
+    second: Bone.011
+  - first:
+      4: 400022
+    second: Bone.013
+  - first:
+      4: 400024
+    second: Bone.014
+  - first:
+      4: 400026
+    second: Bone.015
+  - first:
+      4: 400028
+    second: Bone.016
+  - first:
+      4: 400030
+    second: Bone.017
+  - first:
+      4: 400032
+    second: Root
+  - first:
+      4: 400034
+    second: Sheep
+  - first:
+      4: 400036
+    second: //RootNode
+  - first:
+      4: 400038
+    second: sheep_mesh
+  - first:
+      21: 2100000
+    second: matLowPoly
+  - first:
+      43: 4300000
+    second: sheep_mesh
+  - first:
+      74: 7400000
+    second: Sheep|Cube.001Action.002
+  - first:
+      74: 7400002
+    second: Sheep|Idle
+  - first:
+      74: 7400004
+    second: Sheep|terrain_riverAction
+  - first:
+      74: 7400006
+    second: Sheep|Walk
+  - first:
+      74: 7400008
+    second: Sheep|Die
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: sheep_mesh
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -78,6 +174,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -89,6 +186,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Sheep|Idle
       takeName: Sheep|Idle
+      internalID: 7400002
       firstFrame: 0
       lastFrame: 199
       wrapMode: 0
@@ -117,6 +215,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Sheep|Walk
       takeName: Sheep|Walk
+      internalID: 7400006
       firstFrame: 0
       lastFrame: 20
       wrapMode: 0
@@ -145,6 +244,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Sheep|Die
       takeName: Sheep|Die
+      internalID: 7400008
       firstFrame: 0
       lastFrame: 7
       wrapMode: 0
@@ -170,34 +270,43 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
-    secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
-    secondaryUVPackMargin: 4
+    secondaryUVAngleDistortion: 5
+    secondaryUVAreaDistortion: 5
+    secondaryUVHardAngle: 30
+    secondaryUVPackMargin: 8
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -212,7 +321,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
