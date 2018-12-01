@@ -24,8 +24,7 @@ public class Flautist : MonoBehaviour
 
 		Vector3 velocity = (v * camTransform.forward + h * camTransform.right);
 		velocity.y = rb.velocity.y;
-		
-		
+
 		rb.velocity = velocity * speed * dt;
     }
 }
