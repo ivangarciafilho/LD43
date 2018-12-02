@@ -1,63 +1,161 @@
 fileFormatVersion: 2
 guid: 175febab25a133545bb941cb948a5bf3
-timeCreated: 1496597777
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Bird1_Model
-    100002: Bones_and_Cons
-    100004: Global_Con
-    100006: Head_Con
-    100008: Head_Jnt
-    100010: L_Wing1
-    100012: L_Wing2
-    100014: L_Wing3
-    100016: L_Wing_Con1
-    100018: L_Wing_Con2
-    100020: Nose_Jnt
-    100022: R_Wing1
-    100024: R_Wing2
-    100026: R_Wing3
-    100028: R_Wing_Con1
-    100030: R_Wing_Con2
-    100032: Root_Con
-    100034: Root_Jnt
-    100036: //RootNode
-    100038: Tail_Con
-    100040: Tail_Jnt1
-    100042: Tail_Jnt2
-    400000: Bird1_Model
-    400002: Bones_and_Cons
-    400004: Global_Con
-    400006: Head_Con
-    400008: Head_Jnt
-    400010: L_Wing1
-    400012: L_Wing2
-    400014: L_Wing3
-    400016: L_Wing_Con1
-    400018: L_Wing_Con2
-    400020: Nose_Jnt
-    400022: R_Wing1
-    400024: R_Wing2
-    400026: R_Wing3
-    400028: R_Wing_Con1
-    400030: R_Wing_Con2
-    400032: Root_Con
-    400034: Root_Jnt
-    400036: //RootNode
-    400038: Tail_Con
-    400040: Tail_Jnt1
-    400042: Tail_Jnt2
-    4300000: Bird1_Model
-    7400000: SBird1_Bind_Anim
-    7400002: SBird1_Flap_Anim
-    9500000: //RootNode
-    13700000: Bird1_Model
+  serializedVersion: 24
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bird1_Model
+  - first:
+      1: 100002
+    second: Bones_and_Cons
+  - first:
+      1: 100004
+    second: Global_Con
+  - first:
+      1: 100006
+    second: Head_Con
+  - first:
+      1: 100008
+    second: Head_Jnt
+  - first:
+      1: 100010
+    second: L_Wing1
+  - first:
+      1: 100012
+    second: L_Wing2
+  - first:
+      1: 100014
+    second: L_Wing3
+  - first:
+      1: 100016
+    second: L_Wing_Con1
+  - first:
+      1: 100018
+    second: L_Wing_Con2
+  - first:
+      1: 100020
+    second: Nose_Jnt
+  - first:
+      1: 100022
+    second: R_Wing1
+  - first:
+      1: 100024
+    second: R_Wing2
+  - first:
+      1: 100026
+    second: R_Wing3
+  - first:
+      1: 100028
+    second: R_Wing_Con1
+  - first:
+      1: 100030
+    second: R_Wing_Con2
+  - first:
+      1: 100032
+    second: Root_Con
+  - first:
+      1: 100034
+    second: Root_Jnt
+  - first:
+      1: 100036
+    second: //RootNode
+  - first:
+      1: 100038
+    second: Tail_Con
+  - first:
+      1: 100040
+    second: Tail_Jnt1
+  - first:
+      1: 100042
+    second: Tail_Jnt2
+  - first:
+      4: 400000
+    second: Bird1_Model
+  - first:
+      4: 400002
+    second: Bones_and_Cons
+  - first:
+      4: 400004
+    second: Global_Con
+  - first:
+      4: 400006
+    second: Head_Con
+  - first:
+      4: 400008
+    second: Head_Jnt
+  - first:
+      4: 400010
+    second: L_Wing1
+  - first:
+      4: 400012
+    second: L_Wing2
+  - first:
+      4: 400014
+    second: L_Wing3
+  - first:
+      4: 400016
+    second: L_Wing_Con1
+  - first:
+      4: 400018
+    second: L_Wing_Con2
+  - first:
+      4: 400020
+    second: Nose_Jnt
+  - first:
+      4: 400022
+    second: R_Wing1
+  - first:
+      4: 400024
+    second: R_Wing2
+  - first:
+      4: 400026
+    second: R_Wing3
+  - first:
+      4: 400028
+    second: R_Wing_Con1
+  - first:
+      4: 400030
+    second: R_Wing_Con2
+  - first:
+      4: 400032
+    second: Root_Con
+  - first:
+      4: 400034
+    second: Root_Jnt
+  - first:
+      4: 400036
+    second: //RootNode
+  - first:
+      4: 400038
+    second: Tail_Con
+  - first:
+      4: 400040
+    second: Tail_Jnt1
+  - first:
+      4: 400042
+    second: Tail_Jnt2
+  - first:
+      43: 4300000
+    second: Bird1_Model
+  - first:
+      74: 7400000
+    second: SBird1_Bind_Anim
+  - first:
+      74: 7400002
+    second: SBird1_Flap_Anim
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Bird1_Model
+  externalObjects: {}
   materials:
     importMaterials: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -70,16 +168,20 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: SBird1_Bind_Anim
       takeName: Take 001
+      internalID: 7400000
       firstFrame: 0
       lastFrame: 4
       wrapMode: 0
@@ -152,6 +254,7 @@ ModelImporter:
     - serializedVersion: 16
       name: SBird1_Flap_Anim
       takeName: Take 001
+      internalID: 7400002
       firstFrame: 6
       lastFrame: 25
       wrapMode: 0
@@ -225,24 +328,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importBlendShapes: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 5
+    secondaryUVAreaDistortion: 5
+    secondaryUVHardAngle: 30
     secondaryUVPackMargin: 4
     useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -257,7 +375,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

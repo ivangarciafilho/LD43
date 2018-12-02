@@ -1,89 +1,239 @@
 fileFormatVersion: 2
 guid: b1dd02c4daa7e6248ab9cf52038f20cf
-timeCreated: 1496597778
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Bones_and_Cons
-    100002: Global_con
-    100004: Head_Con
-    100006: Head_Jnt1
-    100008: Head_Jnt2
-    100010: L_Arm_Con
-    100012: L_Arm_Ik
-    100014: L_Elbow_Jnt
-    100016: L_Foot_Jnt
-    100018: L_Hand_Jnt
-    100020: L_Hip_Jnt
-    100022: L_Knee_Jnt
-    100024: L_Leg_Con
-    100026: L_Leg_Ik
-    100028: L_Shoulder_Jnt
-    100030: L_Wrist_Jnt
-    100032: R_Arm_Con
-    100034: R_Arm_Ik
-    100036: R_Elbow_Jnt
-    100038: R_Foot_Jnt
-    100040: R_Hand_Jnt
-    100042: R_Hip_Jnt
-    100044: R_Knee_Jnt
-    100046: R_Leg_Con
-    100048: R_Leg_Ik
-    100050: R_Shoulder_Jnt
-    100052: R_Wrist_Jnt
-    100054: Root_con
-    100056: Root_Jnt
-    100058: //RootNode
-    100060: Tail_Con
-    100062: Tail_Jnt1
-    100064: Tail_Jnt2
-    100066: Turtle_Model
-    400000: Bones_and_Cons
-    400002: Global_con
-    400004: Head_Con
-    400006: Head_Jnt1
-    400008: Head_Jnt2
-    400010: L_Arm_Con
-    400012: L_Arm_Ik
-    400014: L_Elbow_Jnt
-    400016: L_Foot_Jnt
-    400018: L_Hand_Jnt
-    400020: L_Hip_Jnt
-    400022: L_Knee_Jnt
-    400024: L_Leg_Con
-    400026: L_Leg_Ik
-    400028: L_Shoulder_Jnt
-    400030: L_Wrist_Jnt
-    400032: R_Arm_Con
-    400034: R_Arm_Ik
-    400036: R_Elbow_Jnt
-    400038: R_Foot_Jnt
-    400040: R_Hand_Jnt
-    400042: R_Hip_Jnt
-    400044: R_Knee_Jnt
-    400046: R_Leg_Con
-    400048: R_Leg_Ik
-    400050: R_Shoulder_Jnt
-    400052: R_Wrist_Jnt
-    400054: Root_con
-    400056: Root_Jnt
-    400058: //RootNode
-    400060: Tail_Con
-    400062: Tail_Jnt1
-    400064: Tail_Jnt2
-    400066: Turtle_Model
-    4300000: Turtle_Model
-    7400000: STurtle_Bind_Anim
-    7400002: STurtle_Walk_Anim
-    7400004: STurtle_Retreat_Anim
-    7400006: STurtle_Idle_Anim
-    9500000: //RootNode
-    13700000: Turtle_Model
+  serializedVersion: 24
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bones_and_Cons
+  - first:
+      1: 100002
+    second: Global_con
+  - first:
+      1: 100004
+    second: Head_Con
+  - first:
+      1: 100006
+    second: Head_Jnt1
+  - first:
+      1: 100008
+    second: Head_Jnt2
+  - first:
+      1: 100010
+    second: L_Arm_Con
+  - first:
+      1: 100012
+    second: L_Arm_Ik
+  - first:
+      1: 100014
+    second: L_Elbow_Jnt
+  - first:
+      1: 100016
+    second: L_Foot_Jnt
+  - first:
+      1: 100018
+    second: L_Hand_Jnt
+  - first:
+      1: 100020
+    second: L_Hip_Jnt
+  - first:
+      1: 100022
+    second: L_Knee_Jnt
+  - first:
+      1: 100024
+    second: L_Leg_Con
+  - first:
+      1: 100026
+    second: L_Leg_Ik
+  - first:
+      1: 100028
+    second: L_Shoulder_Jnt
+  - first:
+      1: 100030
+    second: L_Wrist_Jnt
+  - first:
+      1: 100032
+    second: R_Arm_Con
+  - first:
+      1: 100034
+    second: R_Arm_Ik
+  - first:
+      1: 100036
+    second: R_Elbow_Jnt
+  - first:
+      1: 100038
+    second: R_Foot_Jnt
+  - first:
+      1: 100040
+    second: R_Hand_Jnt
+  - first:
+      1: 100042
+    second: R_Hip_Jnt
+  - first:
+      1: 100044
+    second: R_Knee_Jnt
+  - first:
+      1: 100046
+    second: R_Leg_Con
+  - first:
+      1: 100048
+    second: R_Leg_Ik
+  - first:
+      1: 100050
+    second: R_Shoulder_Jnt
+  - first:
+      1: 100052
+    second: R_Wrist_Jnt
+  - first:
+      1: 100054
+    second: Root_con
+  - first:
+      1: 100056
+    second: Root_Jnt
+  - first:
+      1: 100058
+    second: //RootNode
+  - first:
+      1: 100060
+    second: Tail_Con
+  - first:
+      1: 100062
+    second: Tail_Jnt1
+  - first:
+      1: 100064
+    second: Tail_Jnt2
+  - first:
+      1: 100066
+    second: Turtle_Model
+  - first:
+      4: 400000
+    second: Bones_and_Cons
+  - first:
+      4: 400002
+    second: Global_con
+  - first:
+      4: 400004
+    second: Head_Con
+  - first:
+      4: 400006
+    second: Head_Jnt1
+  - first:
+      4: 400008
+    second: Head_Jnt2
+  - first:
+      4: 400010
+    second: L_Arm_Con
+  - first:
+      4: 400012
+    second: L_Arm_Ik
+  - first:
+      4: 400014
+    second: L_Elbow_Jnt
+  - first:
+      4: 400016
+    second: L_Foot_Jnt
+  - first:
+      4: 400018
+    second: L_Hand_Jnt
+  - first:
+      4: 400020
+    second: L_Hip_Jnt
+  - first:
+      4: 400022
+    second: L_Knee_Jnt
+  - first:
+      4: 400024
+    second: L_Leg_Con
+  - first:
+      4: 400026
+    second: L_Leg_Ik
+  - first:
+      4: 400028
+    second: L_Shoulder_Jnt
+  - first:
+      4: 400030
+    second: L_Wrist_Jnt
+  - first:
+      4: 400032
+    second: R_Arm_Con
+  - first:
+      4: 400034
+    second: R_Arm_Ik
+  - first:
+      4: 400036
+    second: R_Elbow_Jnt
+  - first:
+      4: 400038
+    second: R_Foot_Jnt
+  - first:
+      4: 400040
+    second: R_Hand_Jnt
+  - first:
+      4: 400042
+    second: R_Hip_Jnt
+  - first:
+      4: 400044
+    second: R_Knee_Jnt
+  - first:
+      4: 400046
+    second: R_Leg_Con
+  - first:
+      4: 400048
+    second: R_Leg_Ik
+  - first:
+      4: 400050
+    second: R_Shoulder_Jnt
+  - first:
+      4: 400052
+    second: R_Wrist_Jnt
+  - first:
+      4: 400054
+    second: Root_con
+  - first:
+      4: 400056
+    second: Root_Jnt
+  - first:
+      4: 400058
+    second: //RootNode
+  - first:
+      4: 400060
+    second: Tail_Con
+  - first:
+      4: 400062
+    second: Tail_Jnt1
+  - first:
+      4: 400064
+    second: Tail_Jnt2
+  - first:
+      4: 400066
+    second: Turtle_Model
+  - first:
+      43: 4300000
+    second: Turtle_Model
+  - first:
+      74: 7400000
+    second: STurtle_Bind_Anim
+  - first:
+      74: 7400002
+    second: STurtle_Walk_Anim
+  - first:
+      74: 7400004
+    second: STurtle_Retreat_Anim
+  - first:
+      74: 7400006
+    second: STurtle_Idle_Anim
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Turtle_Model
+  externalObjects: {}
   materials:
     importMaterials: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -96,16 +246,20 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: STurtle_Bind_Anim
       takeName: Take 001
+      internalID: 7400000
       firstFrame: 0
       lastFrame: 4
       wrapMode: 0
@@ -202,6 +356,7 @@ ModelImporter:
     - serializedVersion: 16
       name: STurtle_Walk_Anim
       takeName: Take 001
+      internalID: 7400002
       firstFrame: 6
       lastFrame: 41
       wrapMode: 0
@@ -298,6 +453,7 @@ ModelImporter:
     - serializedVersion: 16
       name: STurtle_Retreat_Anim
       takeName: Take 001
+      internalID: 7400004
       firstFrame: 43
       lastFrame: 64
       wrapMode: 0
@@ -394,6 +550,7 @@ ModelImporter:
     - serializedVersion: 16
       name: STurtle_Idle_Anim
       takeName: Take 001
+      internalID: 7400006
       firstFrame: 66
       lastFrame: 100
       wrapMode: 0
@@ -491,24 +648,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importBlendShapes: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 5
+    secondaryUVAreaDistortion: 5
+    secondaryUVHardAngle: 30
     secondaryUVPackMargin: 4
     useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -523,7 +695,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
