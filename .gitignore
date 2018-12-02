@@ -5,14 +5,14 @@
 [Ll]ibrary/
 [Uu]nityPackageManager/
 [Bb]uild*/
+[Ss]creenshots/
+[Rr]ecord*/
 [Ll]og*/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 ExportedObj/
-Library/
-Temp/
 obj/
 *.svd
 *.userprefs
@@ -29,10 +29,10 @@ obj/
 .vs/
 *.bat
 *.zip
+*.7z
+*.rar
 *.sln
-LD38/LD38.sln
-Builds/
-Screenshots/
+*log
 fmod_editor.log
 
 # ============ #
@@ -45,21 +45,24 @@ fmod_editor.log
 .Trashes
 ehthumbs.db
 Thumbs.db
+
 Assets/ConsolePro/
+
 Assets/Heureka/
+
 Assets/Plugins/EModules/
+
 Assets/Plugins/EModules.meta
+
 Assets/ConsolePro.meta
+
 Assets/Heureka.meta
-Recording/
 
 Assets/AutoSave/
 
 Assets/Grids MX/
 
 Assets/Mad Compile Time Optimizer/
-
-Assets/Plugins/
 
 Assets/Viscera/
 
@@ -68,8 +71,6 @@ Assets/AutoSave\.meta
 Assets/Grids MX\.meta
 
 Assets/Viscera\.meta
-
-Assets/Plugins\.meta
 
 Assets/Mad Compile Time Optimizer\.meta
 
@@ -89,29 +90,15 @@ Assets/FindPrefabsWithComponent\.meta
 
 Assets/FindPrefabsWithComponent/
 
-Assets/VolumetricLights-master/
-
 Assets/PrimitivesPro/
 
 Assets/PrimitivesPro\.meta
 
-Assets/Cinemachine/
-
-Assets/PostProcessing/
-
-Assets/ProjectFiles/StateMachineScripts\.meta
-
-Assets/ProjectFiles/PhysicsMaterials\.meta
-
-Assets/VolumetricLights-master\.meta
-Screenshots/
-Recordings/
-
 Assets/MeshMaker/
 
-Assets/ProDrawCallOptimizer/
-
 Assets/MeshMaker\.meta
+
+Assets/ProDrawCallOptimizer/
 
 Assets/ProDrawCallOptimizer\.meta
 
