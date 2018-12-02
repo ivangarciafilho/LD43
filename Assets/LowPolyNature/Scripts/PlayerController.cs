@@ -356,10 +356,10 @@ private void Inventory_ItemRemoved(object sender, InventoryEventArgs e)
 
 			_moveDirection.y -= Gravity * Time.deltaTime;
 
+			timePlayMusicalSymbol += Time.deltaTime;
 			if(Input.GetMouseButton(1))
 			{
-				timePlayMusicalSymbol += Time.deltaTime;
-				if(timePlayMusicalSymbol >= 0.9f)
+				if(timePlayMusicalSymbol > 1f)
 				{
 
 					var adjustedPosition = musicalSymbolsTransform.position;

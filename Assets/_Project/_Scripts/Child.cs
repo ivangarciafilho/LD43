@@ -78,6 +78,8 @@ public class Child : MonoBehaviour
 		{
 			follow = false;
 			gameObject.SetActive(false);
+			RemainsPool.PlayVfxOnPosition(transform.position);
+			BoltsPool.PlayVfxOnPosition(transform.position);
 			GameManager.Instance.ReplaceChild(this);
 		}
 		else
