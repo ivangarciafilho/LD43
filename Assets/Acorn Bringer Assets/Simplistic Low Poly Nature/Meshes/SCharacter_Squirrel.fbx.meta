@@ -1,104 +1,284 @@
 fileFormatVersion: 2
 guid: 265ee6fac4cc17345b23403e90e2ba45
-timeCreated: 1496597777
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Bones_and_Cons
-    100002: Global_Con
-    100004: Head_Con
-    100006: L_Arm_Con
-    100008: L_Arm_Ik
-    100010: L_Elbow_Jnt
-    100012: L_Foot_Jnt
-    100014: L_Hand_Jnt
-    100016: L_Hip_Jnt
-    100018: L_Knee_Jnt
-    100020: L_Leg_Con
-    100022: L_Leg_Ik
-    100024: L_Shoulder_Jnt
-    100026: Neck_Jnt
-    100028: Nose_Jnt
-    100030: R_Arm_Con
-    100032: R_Arm_Ik
-    100034: R_Elbow_Jnt
-    100036: R_Foot_Jnt
-    100038: R_Hand_Jnt
-    100040: R_Hip_Jnt
-    100042: R_Knee_Jnt
-    100044: R_Leg_Con
-    100046: R_Leg_Ik
-    100048: R_Shoulder_Jnt
-    100050: Root_Con
-    100052: Root_Jnt
-    100054: //RootNode
-    100056: Spine_Con1
-    100058: Spine_Con2
-    100060: Spine_con3
-    100062: Spine_Jnt1
-    100064: Spine_Jnt2
-    100066: Spine_Jnt3
-    100068: Squirrel_Model
-    100070: Tail_Con1
-    100072: Tail_Con2
-    100074: Tail_Con3
-    100076: Tail_Jnt1
-    100078: Tail_Jnt2
-    100080: Tail_Jnt3
-    100082: Tail_Jnt4
-    400000: Bones_and_Cons
-    400002: Global_Con
-    400004: Head_Con
-    400006: L_Arm_Con
-    400008: L_Arm_Ik
-    400010: L_Elbow_Jnt
-    400012: L_Foot_Jnt
-    400014: L_Hand_Jnt
-    400016: L_Hip_Jnt
-    400018: L_Knee_Jnt
-    400020: L_Leg_Con
-    400022: L_Leg_Ik
-    400024: L_Shoulder_Jnt
-    400026: Neck_Jnt
-    400028: Nose_Jnt
-    400030: R_Arm_Con
-    400032: R_Arm_Ik
-    400034: R_Elbow_Jnt
-    400036: R_Foot_Jnt
-    400038: R_Hand_Jnt
-    400040: R_Hip_Jnt
-    400042: R_Knee_Jnt
-    400044: R_Leg_Con
-    400046: R_Leg_Ik
-    400048: R_Shoulder_Jnt
-    400050: Root_Con
-    400052: Root_Jnt
-    400054: //RootNode
-    400056: Spine_Con1
-    400058: Spine_Con2
-    400060: Spine_con3
-    400062: Spine_Jnt1
-    400064: Spine_Jnt2
-    400066: Spine_Jnt3
-    400068: Squirrel_Model
-    400070: Tail_Con1
-    400072: Tail_Con2
-    400074: Tail_Con3
-    400076: Tail_Jnt1
-    400078: Tail_Jnt2
-    400080: Tail_Jnt3
-    400082: Tail_Jnt4
-    4300000: Squirrel_Model
-    7400000: SSquirrel_Bind_Anim
-    7400002: SSquirrel_Eat_Anim
-    7400004: SSquirrel_Jump_Anim
-    9500000: //RootNode
-    13700000: Squirrel_Model
+  serializedVersion: 24
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bones_and_Cons
+  - first:
+      1: 100002
+    second: Global_Con
+  - first:
+      1: 100004
+    second: Head_Con
+  - first:
+      1: 100006
+    second: L_Arm_Con
+  - first:
+      1: 100008
+    second: L_Arm_Ik
+  - first:
+      1: 100010
+    second: L_Elbow_Jnt
+  - first:
+      1: 100012
+    second: L_Foot_Jnt
+  - first:
+      1: 100014
+    second: L_Hand_Jnt
+  - first:
+      1: 100016
+    second: L_Hip_Jnt
+  - first:
+      1: 100018
+    second: L_Knee_Jnt
+  - first:
+      1: 100020
+    second: L_Leg_Con
+  - first:
+      1: 100022
+    second: L_Leg_Ik
+  - first:
+      1: 100024
+    second: L_Shoulder_Jnt
+  - first:
+      1: 100026
+    second: Neck_Jnt
+  - first:
+      1: 100028
+    second: Nose_Jnt
+  - first:
+      1: 100030
+    second: R_Arm_Con
+  - first:
+      1: 100032
+    second: R_Arm_Ik
+  - first:
+      1: 100034
+    second: R_Elbow_Jnt
+  - first:
+      1: 100036
+    second: R_Foot_Jnt
+  - first:
+      1: 100038
+    second: R_Hand_Jnt
+  - first:
+      1: 100040
+    second: R_Hip_Jnt
+  - first:
+      1: 100042
+    second: R_Knee_Jnt
+  - first:
+      1: 100044
+    second: R_Leg_Con
+  - first:
+      1: 100046
+    second: R_Leg_Ik
+  - first:
+      1: 100048
+    second: R_Shoulder_Jnt
+  - first:
+      1: 100050
+    second: Root_Con
+  - first:
+      1: 100052
+    second: Root_Jnt
+  - first:
+      1: 100054
+    second: //RootNode
+  - first:
+      1: 100056
+    second: Spine_Con1
+  - first:
+      1: 100058
+    second: Spine_Con2
+  - first:
+      1: 100060
+    second: Spine_con3
+  - first:
+      1: 100062
+    second: Spine_Jnt1
+  - first:
+      1: 100064
+    second: Spine_Jnt2
+  - first:
+      1: 100066
+    second: Spine_Jnt3
+  - first:
+      1: 100068
+    second: Squirrel_Model
+  - first:
+      1: 100070
+    second: Tail_Con1
+  - first:
+      1: 100072
+    second: Tail_Con2
+  - first:
+      1: 100074
+    second: Tail_Con3
+  - first:
+      1: 100076
+    second: Tail_Jnt1
+  - first:
+      1: 100078
+    second: Tail_Jnt2
+  - first:
+      1: 100080
+    second: Tail_Jnt3
+  - first:
+      1: 100082
+    second: Tail_Jnt4
+  - first:
+      4: 400000
+    second: Bones_and_Cons
+  - first:
+      4: 400002
+    second: Global_Con
+  - first:
+      4: 400004
+    second: Head_Con
+  - first:
+      4: 400006
+    second: L_Arm_Con
+  - first:
+      4: 400008
+    second: L_Arm_Ik
+  - first:
+      4: 400010
+    second: L_Elbow_Jnt
+  - first:
+      4: 400012
+    second: L_Foot_Jnt
+  - first:
+      4: 400014
+    second: L_Hand_Jnt
+  - first:
+      4: 400016
+    second: L_Hip_Jnt
+  - first:
+      4: 400018
+    second: L_Knee_Jnt
+  - first:
+      4: 400020
+    second: L_Leg_Con
+  - first:
+      4: 400022
+    second: L_Leg_Ik
+  - first:
+      4: 400024
+    second: L_Shoulder_Jnt
+  - first:
+      4: 400026
+    second: Neck_Jnt
+  - first:
+      4: 400028
+    second: Nose_Jnt
+  - first:
+      4: 400030
+    second: R_Arm_Con
+  - first:
+      4: 400032
+    second: R_Arm_Ik
+  - first:
+      4: 400034
+    second: R_Elbow_Jnt
+  - first:
+      4: 400036
+    second: R_Foot_Jnt
+  - first:
+      4: 400038
+    second: R_Hand_Jnt
+  - first:
+      4: 400040
+    second: R_Hip_Jnt
+  - first:
+      4: 400042
+    second: R_Knee_Jnt
+  - first:
+      4: 400044
+    second: R_Leg_Con
+  - first:
+      4: 400046
+    second: R_Leg_Ik
+  - first:
+      4: 400048
+    second: R_Shoulder_Jnt
+  - first:
+      4: 400050
+    second: Root_Con
+  - first:
+      4: 400052
+    second: Root_Jnt
+  - first:
+      4: 400054
+    second: //RootNode
+  - first:
+      4: 400056
+    second: Spine_Con1
+  - first:
+      4: 400058
+    second: Spine_Con2
+  - first:
+      4: 400060
+    second: Spine_con3
+  - first:
+      4: 400062
+    second: Spine_Jnt1
+  - first:
+      4: 400064
+    second: Spine_Jnt2
+  - first:
+      4: 400066
+    second: Spine_Jnt3
+  - first:
+      4: 400068
+    second: Squirrel_Model
+  - first:
+      4: 400070
+    second: Tail_Con1
+  - first:
+      4: 400072
+    second: Tail_Con2
+  - first:
+      4: 400074
+    second: Tail_Con3
+  - first:
+      4: 400076
+    second: Tail_Jnt1
+  - first:
+      4: 400078
+    second: Tail_Jnt2
+  - first:
+      4: 400080
+    second: Tail_Jnt3
+  - first:
+      4: 400082
+    second: Tail_Jnt4
+  - first:
+      43: 4300000
+    second: Squirrel_Model
+  - first:
+      74: 7400000
+    second: SSquirrel_Bind_Anim
+  - first:
+      74: 7400002
+    second: SSquirrel_Eat_Anim
+  - first:
+      74: 7400004
+    second: SSquirrel_Jump_Anim
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Squirrel_Model
+  externalObjects: {}
   materials:
     importMaterials: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -111,16 +291,20 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: SSquirrel_Bind_Anim
       takeName: Take 001
+      internalID: 7400000
       firstFrame: 0
       lastFrame: 4
       wrapMode: 0
@@ -233,6 +417,7 @@ ModelImporter:
     - serializedVersion: 16
       name: SSquirrel_Eat_Anim
       takeName: Take 001
+      internalID: 7400002
       firstFrame: 7
       lastFrame: 62
       wrapMode: 0
@@ -345,6 +530,7 @@ ModelImporter:
     - serializedVersion: 16
       name: SSquirrel_Jump_Anim
       takeName: Take 001
+      internalID: 7400004
       firstFrame: 64
       lastFrame: 80
       wrapMode: 0
@@ -458,24 +644,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importBlendShapes: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 5
+    secondaryUVAreaDistortion: 5
+    secondaryUVHardAngle: 30
     secondaryUVPackMargin: 4
     useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -490,7 +691,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
