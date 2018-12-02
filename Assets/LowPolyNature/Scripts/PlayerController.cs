@@ -367,6 +367,8 @@ public class PlayerController : MonoBehaviour
 					adjustedRotation.z = 0f;
 					musicalSymbolsTransform.transform.eulerAngles = adjustedRotation;
 
+					_animator.SetTrigger("Play");
+
 					musicalSymbolsPS.Play();
 					timePlayMusicalSymbol = 0.0f;
 				}
