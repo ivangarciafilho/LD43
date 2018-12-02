@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
 	#region Public Members
 
 	public float Speed = 5.0f;
+	private float defaultSpeed;
 
 	public float RotationSpeed = 240.0f;
 
@@ -57,6 +58,7 @@ public class PlayerController : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+		defaultSpeed = Speed;
 		amountOfFootsteps = footsteps.Length;
 		currentAvailableFootstep = 0;
 		foreach (var footstep in footsteps) footstep.transform.SetParent(null);
@@ -78,12 +80,13 @@ public class PlayerController : MonoBehaviour
 		//startFood = Food;
 		//mFoodBar.SetValue(Food);
 
-	   // InvokeRepeating("IncreaseHunger", 0, HungerRate);
-	}
+		// InvokeRepeating("IncreaseHunger", 0, HungerRate);
 
-	#region Inventory
+}
 
-	private void Inventory_ItemRemoved(object sender, InventoryEventArgs e)
+#region Inventory
+
+private void Inventory_ItemRemoved(object sender, InventoryEventArgs e)
 	{
 		InventoryItemBase item = e.Item;
 
@@ -260,6 +263,10 @@ public class PlayerController : MonoBehaviour
 		footStep.transform.position = transform.position;
 		footStep.SetActive(true);
 
+		var speedDeviation = Random.Range(0.85f, 1.15f);
+		_animator.SetFloat("Speed", speedDeviation);
+		Speed = defaultSpeed * speedDeviation;
+
 		currentAvailableFootstep++;
 	}
 
@@ -349,7 +356,7 @@ public class PlayerController : MonoBehaviour
 
 			_moveDirection.y -= Gravity * Time.deltaTime;
 
-			if(Input.GetKey(KeyCode.V))
+			if(Input.GetMouseButton(1))
 			{
 				timePlayMusicalSymbol += Time.deltaTime;
 				if(timePlayMusicalSymbol >= 0.9f)
