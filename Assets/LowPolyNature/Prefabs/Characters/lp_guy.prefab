@@ -639,7 +639,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.7, z: 0}
+  m_Center: {x: 0, y: 1.325, z: 0}
 --- !u!65 &65069898044060218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1257,6 +1257,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4277588053130686}
     m_Modifications:
+    - target: {fileID: 100000, guid: d49582bc796475e45aa0d46c70d29ec0, type: 3}
+      propertyPath: m_Name
+      value: Guitar_002
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d49582bc796475e45aa0d46c70d29ec0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00019
@@ -1313,10 +1317,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.005
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: d49582bc796475e45aa0d46c70d29ec0, type: 3}
-      propertyPath: m_Name
-      value: Guitar_002
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d49582bc796475e45aa0d46c70d29ec0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1340,6 +1340,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4196700933315414}
     m_Modifications:
+    - target: {fileID: 100000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
+      propertyPath: m_Name
+      value: PanFlute
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0022
@@ -1395,10 +1399,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
-      propertyPath: m_Name
-      value: PanFlute
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1503,6 +1503,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4277588053130686}
     m_Modifications:
+    - target: {fileID: 100000, guid: d49582bc796475e45aa0d46c70d29ec0, type: 3}
+      propertyPath: m_Name
+      value: Guitar_002
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d49582bc796475e45aa0d46c70d29ec0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00019
@@ -1559,10 +1563,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.005
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: d49582bc796475e45aa0d46c70d29ec0, type: 3}
-      propertyPath: m_Name
-      value: Guitar_002
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d49582bc796475e45aa0d46c70d29ec0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1586,6 +1586,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4196700933315414}
     m_Modifications:
+    - target: {fileID: 100000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
+      propertyPath: m_Name
+      value: PanFlute
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0022
@@ -1641,10 +1645,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
-      propertyPath: m_Name
-      value: PanFlute
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: cee33024fe7746341896b617ef88dc94, type: 3}
       propertyPath: m_Materials.Array.data[0]

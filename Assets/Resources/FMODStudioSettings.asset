@@ -15,11 +15,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets\StreamingAssets\FMOD\LD43\ludumdare43.fspro
-  SourceProjectPathUnformatted: Assets\StreamingAssets\FMOD\LD43\ludumdare43.fspro
-  SourceBankPathUnformatted: Assets\StreamingAssets\FMOD\LD43\Build
+  sourceProjectPath: Assets\StreamingAssets\ludumdare43.fspro
+  SourceProjectPathUnformatted: Assets\StreamingAssets\ludumdare43.fspro
+  SourceBankPathUnformatted: Assets\StreamingAssets\Build
   AutomaticEventLoading: 1
-  AutomaticSampleLoading: 0
+  AutomaticSampleLoading: 1
   ImportType: 0
   TargetAssetPath: 
   LoggingLevel: 0
