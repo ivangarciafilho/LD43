@@ -32,6 +32,10 @@ public class PlayerController : MonoBehaviour
     public float Speed = 5.0f;
 
     public float RotationSpeed = 240.0f;
+	
+	public Transform musicalSymbolsTransform;
+	public ParticleSystem musicalSymbolsPS;
+	float timePlayMusicalSymbol = 10;
 
     //public Inventory Inventory;
 
@@ -323,6 +327,18 @@ public class PlayerController : MonoBehaviour
 
             _moveDirection.y -= Gravity * Time.deltaTime;
 
+			if(Input.GetKey(KeyCode.V))
+			{
+				timePlayMusicalSymbol += Time.deltaTime;
+				if(timePlayMusicalSymbol >= 0.9f)
+				{
+					//musicalSymbolsTransform.position = transform.position;
+					musicalSymbolsPS.Play();
+					
+					timePlayMusicalSymbol = 0.0f;
+				}				
+			}
+			
             _characterController.Move(_moveDirection * Time.deltaTime);
         }
     }
