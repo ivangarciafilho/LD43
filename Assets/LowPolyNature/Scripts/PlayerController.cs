@@ -53,8 +53,6 @@ public class PlayerController : MonoBehaviour
 	#endregion
 
 
-
-
 	// Use this for initialization
 	void Start()
 	{
@@ -375,6 +373,7 @@ private void Inventory_ItemRemoved(object sender, InventoryEventArgs e)
 					musicalSymbolsTransform.transform.eulerAngles = adjustedRotation;
 
 					_animator.SetTrigger("Play");
+                    MusicalWooshsPool.PlaySfxOnPosition(transform.position);
 
 					musicalSymbolsPS.Play();
 					timePlayMusicalSymbol = 0.0f;
