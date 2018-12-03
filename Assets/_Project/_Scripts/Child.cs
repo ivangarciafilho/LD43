@@ -67,7 +67,7 @@ public class Child : MonoBehaviour
 
 	private void Update()
 	{
-		if (distanceFromFlautist < GameManager.Instance.playerRange)
+		if (distanceFromFlautist < GameManager.Instance.playerRange && !follow)
 		{
 			if (Input.GetMouseButtonDown(1))
 			{
@@ -86,7 +86,7 @@ public class Child : MonoBehaviour
 		{
 			distanceFromCaldron = Vector3.Distance(caldronTransform.position, transform.position);
 
-			if (distanceFromCaldron <= 1.5f)
+			if (distanceFromCaldron < 1.2f)
 			{
 				follow = false;
 				gameObject.SetActive(false);
