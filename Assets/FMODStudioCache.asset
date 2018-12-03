@@ -40,6 +40,23 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2567584
   Exists: 0
+--- !u!114 &-7842694027634732902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: flute
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &-7758663345780075495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,6 +141,26 @@ MonoBehaviour:
   Min: 1
   Max: 3
   Default: 3
+--- !u!114 &-7296949163599454837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\LD43\Assets\FMOD\Build\Desktop\music.bank
+  lastModified: 636794527089082326
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1166432
+  Exists: 1
 --- !u!114 &-6842867903358527719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +231,26 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 12474
+  Exists: 1
+--- !u!114 &-4838676419691365336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\FMOD\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636794527088092327
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 960
   Exists: 1
 --- !u!114 &-4546438052503573729
 MonoBehaviour:
@@ -286,6 +343,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &-1883594401141313531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: intensity
+  Min: 1
+  Max: 3
+  Default: 3
 --- !u!114 &-1646165230982381192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +414,30 @@ MonoBehaviour:
   Min: 1
   Max: 3
   Default: 3
+--- !u!114 &-1514198482786383081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player/sfx_player_footsteps
+  guid: c7aecfc49c784747aee3bb3a2440df85
+  Banks:
+  - {fileID: 980939723860942621}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-1374402913304729017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,17 +529,17 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 6769173934322479630}
-  - {fileID: 1898588090802670783}
-  - {fileID: -4945115557271661630}
-  - {fileID: 2176014199997072960}
+  - {fileID: -4838676419691365336}
+  - {fileID: -7296949163599454837}
+  - {fileID: 2784117844501442635}
+  - {fileID: 980939723860942621}
   EditorEvents:
-  - {fileID: -7663123355063936636}
-  - {fileID: 7005790431331031237}
-  - {fileID: 484746288487312860}
-  MasterBankRef: {fileID: -4945115557271661630}
-  StringsBankRef: {fileID: 6769173934322479630}
-  stringsBankWriteTime: 636794474017463507
+  - {fileID: 884196658286333750}
+  - {fileID: 1452070120347733450}
+  - {fileID: -1514198482786383081}
+  MasterBankRef: {fileID: 2784117844501442635}
+  StringsBankRef: {fileID: -4838676419691365336}
+  stringsBankWriteTime: 636794527088092327
   cacheVersion: 2
 --- !u!114 &114211393174166529
 MonoBehaviour:
@@ -535,6 +633,33 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &884196658286333750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/bgm_gameplay01
+  guid: 5a9cf7cb40252c45bb853b661d4d4ed3
+  Banks:
+  - {fileID: -7296949163599454837}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2704169539153784419}
+  - {fileID: 7811007550639846925}
+  - {fileID: 3429156871724901024}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 34285
 --- !u!114 &929393028900207226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,6 +677,26 @@ MonoBehaviour:
   Min: 1
   Max: 3
   Default: 3
+--- !u!114 &980939723860942621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\LD43\Assets\FMOD\Build\Desktop\sfx.bank
+  lastModified: 636794527090662282
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 3103264
+  Exists: 1
 --- !u!114 &1438186006118497388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,6 +717,30 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3103264
   Exists: 1
+--- !u!114 &1452070120347733450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambience/sfx_ambience_desertcity
+  guid: 266376f87adc564d8214235e81a12c75
+  Banks:
+  - {fileID: 980939723860942621}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 476259
 --- !u!114 &1581148865599174643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,6 +801,43 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3103264
   Exists: 1
+--- !u!114 &2704169539153784419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: tension
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &2784117844501442635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\LD43\Assets\FMOD\Build\Desktop\Master Bank.bank
+  lastModified: 636794527088062351
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
 --- !u!114 &2865483038425071163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,6 +852,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: tension
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &3429156871724901024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: flute
   Min: 0
   Max: 1
   Default: 0
@@ -670,6 +893,23 @@ MonoBehaviour:
     Value: 3103264
   Exists: 1
 --- !u!114 &4438241197323244711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: tension
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &4487153440200864615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -952,6 +1192,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 476259
+--- !u!114 &7811007550639846925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: intensity
+  Min: 1
+  Max: 3
+  Default: 3
 --- !u!114 &8485764631406954712
 MonoBehaviour:
   m_ObjectHideFlags: 0
