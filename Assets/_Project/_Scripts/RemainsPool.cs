@@ -34,7 +34,7 @@ public class RemainsPool : MonoBehaviour
         //    point.y = hit.point.y;
         //}
 
-        point.y = 0.25f;//hardcoded for while
+        point.y -= 0.5f;//hardcoded for while
 
         instance.poolInstances[currentAvailableVfx].transform.position = point;
         instance.poolInstances[currentAvailableVfx].gameObject.SetActive(true);
