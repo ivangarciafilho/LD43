@@ -16,7 +16,7 @@ public class Loader : MonoBehaviour
 
 		Application.backgroundLoadingPriority = ThreadPriority.BelowNormal;
 
-		AsyncOperation scenarioScene = SceneManager.LoadSceneAsync("Scenario", LoadSceneMode.Additive);
+        AsyncOperation scenarioScene = SceneManager.LoadSceneAsync("Scenario", LoadSceneMode.Additive);
 		scenarioScene.allowSceneActivation = false;
 
 		while (scenarioScene.isDone == false)
