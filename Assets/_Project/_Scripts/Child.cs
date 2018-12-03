@@ -30,6 +30,7 @@ public class Child : MonoBehaviour
 	private Vector2 angularSpeedRange;
 	private Vector2 accelerationRange;
 
+    int waypointIndex;
 	bool follow;
 
 	private void Awake()
@@ -54,7 +55,9 @@ public class Child : MonoBehaviour
 
 	void OnEnable()
 	{
-		agent.speed = Random.Range(speedRange.x, speedRange.y);
+        waypointIndex = Random.Range(0, GameManager.Instance.sheepsWaypoints.Count);
+
+        agent.speed = Random.Range(speedRange.x, speedRange.y);
 		agent.angularSpeed = Random.Range(angularSpeedRange.x, angularSpeedRange.y);
 		agent.acceleration = Random.Range(accelerationRange.x, accelerationRange.y);
 		agent.stoppingDistance = defaultStoppingDistance;
@@ -104,9 +107,22 @@ public class Child : MonoBehaviour
 		nextDistanceCheck = Time.time + 0.2f;
 	}
 
+    Vector3 GetWaypoint()
+    {
+        Transform result = GameManager.Instance.sheepsWaypoints[waypointIndex];
+
+        if (agent.remainingDistance <= agent.stoppingDistance + 1)
+        {
+            waypointIndex = Random.Range(0, GameManager.Instance.sheepsWaypoints.Count);
+            result = GameManager.Instance.sheepsWaypoints[waypointIndex];
+        }
+
+        return result.position;
+    }
+
 	void LateUpdate()
 	{
-		agent.SetDestination(follow ? target.position : transform.position);
+		agent.SetDestination(follow ? target.position : GetWaypoint());
 		itsAnimator.SetBool(walkAnimationHash, (agent.remainingDistance - agent.stoppingDistance) > 0.1f);
 		itsAnimator.SetFloat(speedAnimationHash, 1 + agent.velocity.magnitude);
 

@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
 	public Text sheepCounterText;
 	public int sheepCounter;
 
+    public List<Transform> sheepsWaypoints = new List<Transform>();
+
 	void Awake()
 	{
 		if (Instance == null)
