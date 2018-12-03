@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{c9e976af-acaf-440e-941b-32ead6822558}">
+        <property name="assetPath">
+            <value>SFX/sfx_action_thunder.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>2.8282312925170068</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{773495b7-ebcd-490b-825d-efbdc19f7633}</destination>
+        </relationship>
+    </object>
+</objects>
