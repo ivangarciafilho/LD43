@@ -405,12 +405,12 @@ PrefabInstance:
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000005181535
+      value: -0.000000017763545
       objectReference: {fileID: 0}
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000024078656
+      value: 0.00000023581536
       objectReference: {fileID: 0}
     - target: {fileID: 4309210895744930239, guid: e5f13c24da191aa458673dfb144b8d1d,
         type: 3}
@@ -694,39 +694,6 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 258504143}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &324077423
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  serializedVersion: 2
-  m_Width: 512
-  m_Height: 512
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 1
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &406754722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,6 +1910,39 @@ Transform:
   m_Father: {fileID: 2086499803}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &1198119189
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 2
+  m_Width: 512
+  m_Height: 512
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 1
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1252902183
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,7 +2813,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774657115}
-  m_LocalRotation: {x: 0.1444582, y: -0.00000005181535, z: 0.00000024078656, w: 0.98951095}
+  m_LocalRotation: {x: 0.1444582, y: -0.000000017763545, z: 0.00000023581536, w: 0.98951095}
   m_LocalPosition: {x: -122.75, y: 2.25, z: 177.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2998,6 +2998,76 @@ PrefabInstance:
     - target: {fileID: 1438851699991618, guid: fbc08fd83daf78c4483cae67db92c0e7, type: 3}
       propertyPath: m_Name
       value: lp_guy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961168672901799633, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: ShapeModule.m_Rotation.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961168672901799633, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.orbitalY.scalar
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961168672901799633, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.orbitalY.maxCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961168672901799633, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.orbitalY.maxCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961168672901799633, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.z.maxCurve.m_Curve.Array.data[1].time
+      value: 0.501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961168672901799633, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.z.minCurve.m_Curve.Array.data[1].time
+      value: 0.501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961168672901799633, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.z.minCurve.m_Curve.Array.data[0].time
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961168672901799633, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.z.maxCurve.m_Curve.Array.data[0].time
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853386428520809020, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: ShapeModule.m_Rotation.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853386428520809020, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.orbitalY.scalar
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853386428520809020, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.z.maxCurve.m_Curve.Array.data[0].time
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853386428520809020, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.z.maxCurve.m_Curve.Array.data[1].time
+      value: 0.501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853386428520809020, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.z.minCurve.m_Curve.Array.data[0].time
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853386428520809020, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: VelocityModule.z.minCurve.m_Curve.Array.data[1].time
+      value: 0.501
       objectReference: {fileID: 0}
     - target: {fileID: 5274622616298436157, guid: fbc08fd83daf78c4483cae67db92c0e7,
         type: 3}
@@ -4342,6 +4412,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6305342931247854425, guid: fbc08fd83daf78c4483cae67db92c0e7,
+        type: 3}
+      propertyPath: temple
+      value: 
+      objectReference: {fileID: 1382712996}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbc08fd83daf78c4483cae67db92c0e7, type: 3}
 --- !u!4 &1938513401 stripped
