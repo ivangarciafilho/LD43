@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+using UnityEngine.UI;
+
 public class GameManager : MonoBehaviour
 {
 	public static GameManager Instance = null;
@@ -17,6 +19,9 @@ public class GameManager : MonoBehaviour
 
 	public PlayerController Player;
 	public float playerRange = 5;
+	
+	public Text sheepCounterText;
+	public int sheepCounter;
 
 	void Awake()
 	{
@@ -73,6 +78,9 @@ public class GameManager : MonoBehaviour
 		child.target = flautistTransform;
 		child.transform.position = pos;
 		child.gameObject.SetActive(true);
+		
+		sheepCounter++;
+		sheepCounterText.text = sheepCounter.ToString();
 	}
 
 	void OnDrawGizmos()

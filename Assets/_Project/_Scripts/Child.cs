@@ -23,6 +23,8 @@ public class Child : MonoBehaviour
 	private float defaultSpeed;
 	private float defaultAngularSpeed;
 	private float defaultAcceleration;
+	
+	private float defaultStoppingDistance;
 
 	private Vector2 speedRange;
 	private Vector2 angularSpeedRange;
@@ -39,7 +41,8 @@ public class Child : MonoBehaviour
 		defaultSpeed = agent.speed;
 		speedRange.x = defaultSpeed * 0.75f;
 		speedRange.y = defaultSpeed * 1.5f;
-
+		defaultStoppingDistance = agent.stoppingDistance;
+		
 		defaultAngularSpeed = agent.angularSpeed;
 		angularSpeedRange.x = defaultAngularSpeed * 0.75f;
 		angularSpeedRange.y = defaultAngularSpeed * 1.5f;
@@ -54,6 +57,7 @@ public class Child : MonoBehaviour
 		agent.speed = Random.Range(speedRange.x, speedRange.y);
 		agent.angularSpeed = Random.Range(angularSpeedRange.x, angularSpeedRange.y);
 		agent.acceleration = Random.Range(accelerationRange.x, accelerationRange.y);
+		agent.stoppingDistance = defaultStoppingDistance;
 
 		follow = false;
 
@@ -64,36 +68,37 @@ public class Child : MonoBehaviour
 	private void Update()
 	{
 		if (distanceFromFlautist < GameManager.Instance.playerRange)
+		{
 			if (Input.GetMouseButtonDown(1))
+			{
 				follow = true;
+				target = playerTransform;
+			}
+		}
 	}
 
 	private void FixedUpdate()
 	{
 		if (Time.time < nextDistanceCheck) return;
-
-		distanceFromCaldron = Vector3.Distance(caldronTransform.position, transform.position);
-
-		if (distanceFromCaldron < GameManager.Instance.playerRange + agent.stoppingDistance)
+		
+		distanceFromFlautist = Vector3.Distance(playerTransform.position, transform.position);
+		if(follow)
 		{
-			follow = false;
-			gameObject.SetActive(false);
-			RemainsPool.PlayVfxOnPosition(transform.position);
-			BoltsPool.PlayVfxOnPosition(transform.position);
-			GameManager.Instance.ReplaceChild(this);
-		}
-		else
-		{
-			distanceFromFlautist = Vector3.Distance(playerTransform.position, transform.position);
+			distanceFromCaldron = Vector3.Distance(caldronTransform.position, transform.position);
 
-			if (follow)
+			if (distanceFromCaldron <= 1.5f)
 			{
-				follow =
-				distanceFromCaldron < minimumFollowDistance + agent.stoppingDistance
-				|| distanceFromFlautist < minimumFollowDistance + agent.stoppingDistance;
+				follow = false;
+				gameObject.SetActive(false);
+				RemainsPool.PlayVfxOnPosition(transform.position);
+				BoltsPool.PlayVfxOnPosition(transform.position);
+				GameManager.Instance.ReplaceChild(this);
 			}
-
-			target = distanceFromFlautist > distanceFromCaldron ? caldronTransform : playerTransform;
+			else if(distanceFromCaldron <  GameManager.Instance.cauldronRange)
+			{
+				agent.stoppingDistance = 0;
+				target = caldronTransform;
+			}
 		}
 
 		nextDistanceCheck = Time.time + 0.2f;
@@ -101,7 +106,7 @@ public class Child : MonoBehaviour
 
 	void LateUpdate()
 	{
-		agent.SetDestination(follow ? target.position:transform.position);
+		agent.SetDestination(follow ? target.position : transform.position);
 		itsAnimator.SetBool(walkAnimationHash, (agent.remainingDistance - agent.stoppingDistance) > 0.1f);
 		itsAnimator.SetFloat(speedAnimationHash, 1 + agent.velocity.magnitude);
 
