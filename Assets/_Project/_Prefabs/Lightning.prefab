@@ -19093,9 +19093,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Player/sfx_action_thunder
+  Event: event:/SFX/Player/sfx_action_thunder
   PlayEvent: 11
-  StopEvent: 0
+  StopEvent: 12
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0

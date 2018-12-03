@@ -23,7 +23,7 @@ public class Child : MonoBehaviour
 	private float defaultSpeed;
 	private float defaultAngularSpeed;
 	private float defaultAcceleration;
-	
+
 	private float defaultStoppingDistance;
 
 	private Vector2 speedRange;
@@ -43,7 +43,7 @@ public class Child : MonoBehaviour
 		speedRange.x = defaultSpeed * 0.75f;
 		speedRange.y = defaultSpeed * 1.5f;
 		defaultStoppingDistance = agent.stoppingDistance;
-		
+
 		defaultAngularSpeed = agent.angularSpeed;
 		angularSpeedRange.x = defaultAngularSpeed * 0.75f;
 		angularSpeedRange.y = defaultAngularSpeed * 1.5f;
@@ -76,6 +76,7 @@ public class Child : MonoBehaviour
 			{
 				follow = true;
 				target = playerTransform;
+                EnchantingSfxPool.PlaySfxOnPosition(transform.position);
 			}
 		}
 	}
@@ -83,7 +84,7 @@ public class Child : MonoBehaviour
 	private void FixedUpdate()
 	{
 		if (Time.time < nextDistanceCheck) return;
-		
+
 		distanceFromFlautist = Vector3.Distance(playerTransform.position, transform.position);
 		if(follow)
 		{
