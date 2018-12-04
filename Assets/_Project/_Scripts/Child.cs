@@ -23,6 +23,7 @@ public class Child : MonoBehaviour
 	private float defaultSpeed;
 	private float defaultAngularSpeed;
 	private float defaultAcceleration;
+	public MonoBehaviour loopsfx;
 
 	private float defaultStoppingDistance;
 
@@ -30,7 +31,7 @@ public class Child : MonoBehaviour
 	private Vector2 angularSpeedRange;
 	private Vector2 accelerationRange;
 
-    int waypointIndex;
+	int waypointIndex;
 	bool follow;
 
 	private void Awake()
@@ -55,9 +56,9 @@ public class Child : MonoBehaviour
 
 	void OnEnable()
 	{
-        waypointIndex = Random.Range(0, GameManager.Instance.sheepsWaypoints.Count);
+		waypointIndex = Random.Range(0, GameManager.Instance.sheepsWaypoints.Count);
 
-        agent.speed = Random.Range(speedRange.x, speedRange.y);
+		agent.speed = Random.Range(speedRange.x, speedRange.y);
 		agent.angularSpeed = Random.Range(angularSpeedRange.x, angularSpeedRange.y);
 		agent.acceleration = Random.Range(accelerationRange.x, accelerationRange.y);
 		agent.stoppingDistance = defaultStoppingDistance;
@@ -72,11 +73,13 @@ public class Child : MonoBehaviour
 	{
 		if (distanceFromFlautist < GameManager.Instance.playerRange && !follow)
 		{
+			loopsfx.enabled = true;
+
 			if (Input.GetMouseButtonDown(1))
 			{
 				follow = true;
 				target = playerTransform;
-                EnchantingSfxPool.PlaySfxOnPosition(transform.position);
+				EnchantingSfxPool.PlaySfxOnPosition(transform.position);
 			}
 		}
 	}
@@ -108,18 +111,18 @@ public class Child : MonoBehaviour
 		nextDistanceCheck = Time.time + 0.2f;
 	}
 
-    Vector3 GetWaypoint()
-    {
-        Transform result = GameManager.Instance.sheepsWaypoints[waypointIndex];
+	Vector3 GetWaypoint()
+	{
+		Transform result = GameManager.Instance.sheepsWaypoints[waypointIndex];
 
-        if (agent.remainingDistance <= agent.stoppingDistance + 1)
-        {
-            waypointIndex = Random.Range(0, GameManager.Instance.sheepsWaypoints.Count);
-            result = GameManager.Instance.sheepsWaypoints[waypointIndex];
-        }
+		if (agent.remainingDistance <= agent.stoppingDistance + 1)
+		{
+			waypointIndex = Random.Range(0, GameManager.Instance.sheepsWaypoints.Count);
+			result = GameManager.Instance.sheepsWaypoints[waypointIndex];
+		}
 
-        return result.position;
-    }
+		return result.position;
+	}
 
 	void LateUpdate()
 	{
