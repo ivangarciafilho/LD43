@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e317e7261b603db488d0fd19b5207ec4
+timeCreated: 1500315262
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - mainDirectionalLight: {instanceID: 0}
+  - contactShadowsShader: {fileID: 4800000, guid: ab1a11124b683ad44bcb86515a434172,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
