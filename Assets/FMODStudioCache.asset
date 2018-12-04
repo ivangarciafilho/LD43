@@ -31,11 +31,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\LD43\Assets\FMOD\Build\Desktop\music.bank
-  lastModified: 636794731803443871
+  lastModified: 636795456235558196
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 6470336
+    Value: 2724768
   Exists: 1
 --- !u!114 &-8978166446739394875
 MonoBehaviour:
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636794731750385612
+  lastModified: 636795456235128309
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -623,6 +623,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: flute
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &-4002566152843979759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: tension
   Min: 0
   Max: 1
   Default: 0
@@ -1022,11 +1039,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\LD43\Assets\FMOD\Build\Desktop\sfx.bank
-  lastModified: 636794731878403474
+  lastModified: 636795456236407988
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 7757600
+    Value: 3765792
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -1057,7 +1074,7 @@ MonoBehaviour:
   - {fileID: -5824128813770835121}
   MasterBankRef: {fileID: 1587145606930304663}
   StringsBankRef: {fileID: -7596489679228228051}
-  stringsBankWriteTime: 636794731750385612
+  stringsBankWriteTime: 636795456235128309
   cacheVersion: 2
 --- !u!114 &86265855806539909
 MonoBehaviour:
@@ -1081,7 +1098,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 25
   Length: 4000
 --- !u!114 &114211393174166529
 MonoBehaviour:
@@ -1412,7 +1429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\LD43\Assets\FMOD\Build\Desktop\Master Bank.bank
-  lastModified: 636794731750346315
+  lastModified: 636795456235088323
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1827,6 +1844,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 580
+--- !u!114 &5121815411935847575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: intensity
+  Min: 1
+  Max: 3
+  Default: 3
 --- !u!114 &5129222134787605475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2238,9 +2272,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 4174475330689674095}
-  - {fileID: 7003246353996156544}
-  - {fileID: 1199806030844357356}
+  - {fileID: -4002566152843979759}
+  - {fileID: 5121815411935847575}
+  - {fileID: 8026012965668427473}
   MinDistance: 0
   MaxDistance: 0
   Length: 134068
@@ -2385,6 +2419,23 @@ MonoBehaviour:
   - Name: Desktop
     Value: 7757600
   Exists: 0
+--- !u!114 &8026012965668427473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: flute
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &8053248231156946985
 MonoBehaviour:
   m_ObjectHideFlags: 0

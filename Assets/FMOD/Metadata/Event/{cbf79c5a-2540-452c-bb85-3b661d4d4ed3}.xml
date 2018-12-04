@@ -123,6 +123,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{0d4eb412-99e4-4e9f-a5bd-15f17f1fe64a}">
+        <property name="volume">
+            <value>-5.5</value>
+        </property>
         <relationship name="modulators">
             <destination>{8ace0e54-3385-42da-8d8a-24ceb7a5d30a}</destination>
         </relationship>
@@ -152,7 +155,7 @@
             <value>134.06897959183672</value>
         </property>
         <property name="color">
-            <value>Yellow</value>
+            <value>Cyan</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{4a25b9ef-d926-4109-a190-b2b35e4ce556}</destination>
@@ -166,7 +169,7 @@
     </object>
     <object class="EventMixerGroup" id="{aefaee89-3ea0-4e2a-8eff-ad95d83c124b}">
         <property name="color">
-            <value>Yellow</value>
+            <value>Cyan</value>
         </property>
         <property name="name">
             <value>Main Melody</value>
@@ -193,7 +196,6 @@
         </relationship>
         <relationship name="audioFile">
             <destination>{b51fe72c-36e4-439a-8b0a-19af480fcdd0}</destination>
-            <destination>{5594c127-7620-4d7d-ad0d-5fc1f7921d02}</destination>
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{5b7cdf0e-eb7c-4084-917e-17d7d79bf819}">
@@ -255,6 +257,7 @@
     <object class="MixerBusEffectChain" id="{4f6054c3-56a8-4eed-8ca5-fe2a67ee4153}">
         <relationship name="effects">
             <destination>{ce911f27-7217-46ae-9f96-bbe099f9fa24}</destination>
+            <destination>{eee70eff-eef2-4f25-8ee1-fcdee921234f}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{e24b6d0c-7de7-42da-bcbc-3254125fb1c3}"/>
@@ -302,6 +305,11 @@
     </object>
     <object class="MixerBusPanner" id="{2df29c34-1437-4d15-9b91-2b1d9d70ec8b}"/>
     <object class="MixerBusFader" id="{ce911f27-7217-46ae-9f96-bbe099f9fa24}"/>
+    <object class="LoudnessMeter" id="{eee70eff-eef2-4f25-8ee1-fcdee921234f}">
+        <property name="loudnessTarget">
+            <value>-16</value>
+        </property>
+    </object>
     <object class="AutomationCurve" id="{a6903bb2-fafc-410f-b5e0-80c93ddd9137}">
         <relationship name="parameter">
             <destination>{1336d699-5281-4dd9-990c-7c3b0165becc}</destination>

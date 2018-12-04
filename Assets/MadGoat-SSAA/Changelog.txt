@@ -1,0 +1,96 @@
+
+1.6.1 (Hotfix)
+--------------
+
+ - Fixed Adaptive Resolution mode in VR (Oopsie doopsie)
+
+--------------
+OLDER VERSIONS
+--------------
+
+1.6.0
+--------------
+
+ - Added Per Axis supersampling mode that allows changing the multiplier for each axis of the screen independently
+ - Added checks for invalid multiplier values in API methods
+ - Fixed an issue with the UI allowing for zero and negative multiplier values on custom mode
+ - Fixed missing FSSAA intensity set method in global api
+ - Inspector code clean up (for better extensibility in the future)
+ - Removed ancient code left overs from utils :)
+
+1.5.1
+--------------
+
+ - Fixed a bug that caused image glitching in SSAA VR single pass mode.
+
+1.5
+--------------
+
+ - Tweaked for Unity 2018.1
+ - Bug fixes in public API methods
+ - Package size optimization
+
+1.4
+--------------
+
+ - Added MadGoatSSAA_VR script dedicated for VR devices
+ - Added option to select screenshot/panorama save file format
+ - 360 panorama screenshot mode is now out of "alpha" state
+ - Added easier to read color theme for the inspector when using unity pro (not tested)
+ - Updated all the shaders to support singlepass stereoscopic rendering
+ - Fixed major bug causing MadGoatSSAA_Adv to throw errors and cause black screens
+ - Fixed 360 panorama color issue when using supersampling
+ - Fixed a bug causing Panorama settings to reset when taking 360 pictures from editor
+ - Added button to open online documentation in General Tab
+
+1.3
+--------------
+ 
+ - Added MadGoatSSAA_Adv script dedicated for offline rendering and other similar workflows
+ - Added compatibility with MadGoat Debugger & Benchmark
+ - Added option to change the internal image format (under General tab)
+ - Added slider to control FSSAA intensity
+ - Fixed a bug that was causing FSSAA to corrupt alpha channel when using offline render systems
+ - Improved Nearest Neighbor image filter
+ - Fixed a bug inside the ScreenPointToRay method
+ - Fixed a bug causing "usefilter" in screenshots to automatically turn on when taking screenshots from editor
+ - Performance improvements to the demo scene
+ - Minor UI fixes
+ - Minor code improvements
+
+1.2
+--------------
+
+ - Fixed Screenshot Settings not saving when deselecting game object
+ - Fixed HDR support
+ - Fixed bug causing incompatibility with Post-Processing Stack
+ - Better implementation of screenshot code.
+ - Added "Ultra Quality (FSSAA)" mode to super sampling *
+ - Added functionality to render supersampled panoramas (alpha) **
+ - Added Adaptive Resolution Mode ***
+ - Added global functions to control parameters of all the MadGoatSSAA instances in scene.
+ - Added support for rendering to target render texture
+
+*  FSSAA is inspired from the Filtering Approaces for Real-Time Anti-Aliasing slides by 
+   Timothy Lottes (NVIDIA) and uses FXAA v3 to filter the render image before resizing  
+   to screen resolution.
+
+** Currently, Panorama Screenshots have color issues when supersampling (multiplier different than 1). 
+   However it doesn't affect the operation of the other functionality of the asset and has been
+   released as an "alpha" feature.
+
+***Adaptive resolution mode works by keeping track of the framerate and adjusting the 
+   render resolution in order to maximize the performance.
+
+1.1
+--------------
+- Fixed terrain being missing in demo scene
+- Fixed screenshot stretching when screenshot aspect ratio was different from screen aspect ratio
+- Fixed viewport resizing causing to break the image aspect ratio
+- Added own implementation of ScreenPointToRay to fix raycasting offset at image resolutions different than screen resolution
+- Added OnClick() compatibility mode (at cost of lower overall performance)
+- Minor changes to the Editor UI
+
+1.0
+--------------
+- Initial release
