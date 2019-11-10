@@ -21,13 +21,13 @@
 #define BEAUTIFY_DITHER_FINAL
 
 // Comment out this line to simplify eye adaptation to brightness increase/reduction (old method)
-#define BEAUTIFY_EYE_ADAPTATION_DYNAMIC_RANGE
+//#define BEAUTIFY_EYE_ADAPTATION_DYNAMIC_RANGE
 
 // Uncomment this to enable occlusion on objects that do not have colliders
 //#define BEAUTIFY_SUN_FLARES_OCCLUSION_DEPTH
 
 // Uncomment this line to use an alternate ACES tonemap operator
-//#define BEAUTIFY_ACES_FITTED
+#define BEAUTIFY_ACES_FITTED
 
 // Uncomment this line to use a color-based edge detection algorithm instead of a depth based method. Useful for 2D projects.
 //#define BEAUTIFY_OUTLINE_SOBEL

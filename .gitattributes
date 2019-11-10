@@ -83,6 +83,7 @@
 *.[Ww][Aa][Vv]									-text filter=lfs diff=lfs merge=lfs
 *.[Xx][Mm]										-text filter=lfs diff=lfs merge=lfs
 *.[Bb][Aa][Nn][Kk]							-text filter=lfs diff=lfs merge=lfs
+*.[Pp][Dd][Cc]									-text filter=lfs diff=lfs merge=lfs
 
 #Video												
 *.[Aa][Ss][Ff]										-text filter=lfs diff=lfs merge=lfs
@@ -116,6 +117,7 @@
 *.[Ss][Kk][Pp]									-text filter=lfs diff=lfs merge=lfs
 *.[Ss][Tt][Ll]										-text filter=lfs diff=lfs merge=lfs
 *.[Zz][Tt][Ll]										-text filter=lfs diff=lfs merge=lfs
+*.[Ss][Pp][Mm]									-text filter=lfs diff=lfs merge=lfs
 
 #Compacted Archive
 *.7[Zz]												-text filter=lfs diff=lfs merge=lfs
