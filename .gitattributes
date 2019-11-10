@@ -1,9 +1,6 @@
 # Macro for Unity YAML-based asset files.
 [attr]unityyaml -text merge=unityyamlmerge diff
 
-# Macro for all binary files that should use Git LFS.
-[attr]lfs -text filter=lfs diff=lfs merge=lfs
-
 # Auto detect text files and perform LF normalization
 * text=auto
 
@@ -13,140 +10,141 @@
 *.shader												text
 
 # Unity YAML "mergeables" (hope so)
-*.unity												unityyaml
-*.prefab												unityyaml
+*.unity												-text filter=lfs merge=unityyamlmerge diff
+*.prefab												-text filter=lfs merge=unityyamlmerge diff
 
-*.asset												unityyaml
-*.meta												unityyaml
-*.physicMaterial2D							unityyaml
-*.physicMaterial								unityyaml
-*.mat													unityyaml
-*.anim												unityyaml
-*.controller										unityyaml
-*.overrideController						unityyaml
-*.playable											unityyaml
-*.mask												unityyaml
-*.flare													unityyaml
-*.fontsettings									unityyaml
-*.guiskin												unityyaml
-*.giparams											unityyaml
-*.renderTexture								unityyaml
-*.spriteatlas										unityyaml
-*.terrainlayer									unityyaml
-*.mixer												unityyaml
-*.shadervariants								unityyaml
-*.preset												unityyaml
-*.asmdef											unityyaml
+*.asset												-text filter=lfs merge=unityyamlmerge diff
+*.meta												-text filter=lfs merge=unityyamlmerge diff
+*.physicMaterial2D							-text filter=lfs merge=unityyamlmerge diff
+*.physicMaterial								-text filter=lfs merge=unityyamlmerge diff
+*.mat													-text filter=lfs merge=unityyamlmerge diff
+*.anim												-text filter=lfs merge=unityyamlmerge diff
+*.controller										-text filter=lfs merge=unityyamlmerge diff
+*.overrideController						-text filter=lfs merge=unityyamlmerge diff
+*.playable											-text filter=lfs merge=unityyamlmerge diff
+*.mask												-text filter=lfs merge=unityyamlmerge diff
+*.flare													-text filter=lfs merge=unityyamlmerge diff
+*.fontsettings									-text filter=lfs merge=unityyamlmerge diff
+*.guiskin												-text filter=lfs merge=unityyamlmerge diff
+*.giparams											-text filter=lfs merge=unityyamlmerge diff
+*.renderTexture								-text filter=lfs merge=unityyamlmerge diff
+*.spriteatlas										-text filter=lfs merge=unityyamlmerge diff
+*.terrainlayer									-text filter=lfs merge=unityyamlmerge diff
+*.mixer												-text filter=lfs merge=unityyamlmerge diff
+*.shadervariants								-text filter=lfs merge=unityyamlmerge diff
+*.preset												-text filter=lfs merge=unityyamlmerge diff
+*.asmdef											-text filter=lfs merge=unityyamlmerge diff
 
 *.lfs.*													lfs
 
-*.cubemap										lfs
-*.unitypackage									lfs
+*.cubemap										-text filter=lfs diff=lfs merge=lfs
+*.unitypackage									-text filter=lfs diff=lfs merge=lfs
 
 # Unity YAML "UN_mergeables" (think so)
 *.bytes												text
-*[Ll]]ighting[Dd]ata.asset				-unityyaml lfs
-*[Tt]errain[Dd]ata.asset					-unityyaml lfs
-*-[Tt]errain.asset								-unityyaml lfs
-*-[Nn]av[Mm]esh.asset					-unityyaml lfs
+*[Ll]]ighting[Dd]ata.asset				-text filter=lfs diff=lfs merge=lfs
+*[Tt]errain[Dd]ata.asset					-text filter=lfs diff=lfs merge=lfs
+*-[Tt]errain.asset								-text filter=lfs diff=lfs merge=lfs
+*-[Nn]av[Mm]esh.asset					-text filter=lfs diff=lfs merge=lfs
 
 # Executable/Installer
-*.apk													lfs
-*.exe													lfs
+*.apk													-text filter=lfs diff=lfs merge=lfs
+*.exe													-text filter=lfs diff=lfs merge=lfs
 
 # Fonts
 *.otf													fs
-*.ttf														lfs
+*.ttf														-text filter=lfs diff=lfs merge=lfs
 
 #Image
-*.[Bb][Mm][Pp]								lfs
-*.[Ee][Xx][Rr]										lfs
-*.[Gg][Ii][Ff]										lfs
-*.[Hh][Dd][Rr]									lfs
-*.[Ii][Ff][Ff]										lfs
-*.[Jj][Pp][Gg]										lfs
-*.[Jj][Pp][Ee][Gg]								lfs
-*.[Pp][Ii][Cc][Tt]								lfs
-*.[Pp][Nn][Gg]									lfs
-*.[Pp][Ss][Dd]									lfs
-*.[Tt][Gg][Aa]									lfs
-*.[Tt][Ii][Ff]										lfs
-*.[Tt][Ii][Ff][Ff]									lfs
-*.[Gg][Ii][Ff]										lfs
-*.[Aa][Ii]												lfs
+*.[Bb][Mm][Pp]								-text filter=lfs diff=lfs merge=lfs
+*.[Ee][Xx][Rr]										-text filter=lfs diff=lfs merge=lfs
+*.[Gg][Ii][Ff]										-text filter=lfs diff=lfs merge=lfs
+*.[Hh][Dd][Rr]									-text filter=lfs diff=lfs merge=lfs
+*.[Ii][Ff][Ff]										-text filter=lfs diff=lfs merge=lfs
+*.[Jj][Pp][Gg]										-text filter=lfs diff=lfs merge=lfs
+*.[Jj][Pp][Ee][Gg]								-text filter=lfs diff=lfs merge=lfs
+*.[Pp][Ii][Cc][Tt]								-text filter=lfs diff=lfs merge=lfs
+*.[Pp][Nn][Gg]									-text filter=lfs diff=lfs merge=lfs
+*.[Pp][Ss][Dd]									-text filter=lfs diff=lfs merge=lfs
+*.[Tt][Gg][Aa]									-text filter=lfs diff=lfs merge=lfs
+*.[Tt][Ii][Ff]										-text filter=lfs diff=lfs merge=lfs
+*.[Tt][Ii][Ff][Ff]									-text filter=lfs diff=lfs merge=lfs
+*.[Gg][Ii][Ff]										-text filter=lfs diff=lfs merge=lfs
+*.[Aa][Ii]												-text filter=lfs diff=lfs merge=lfs
 
 #Audio
-*.[Aa][Ii][Ff]										lfs
-*.[Aa][Ii][Ff][Ff]									lfs
-*.[Ii][[Tt][Tt]]										lfs
-*.[Mm][Oo][Dd]								lfs
-*.[Mm][Pp]3										lfs
-*.[Oo][Gg][Gg]									lfs
-*.[Ss]3[Mm]										lfs
-*.[Ww][Aa][Vv]									lfs
-*.[Xx][Mm]										lfs
-*.[Bb][Aa][Nn][Kk]							lfs
+*.[Aa][Ii][Ff]										-text filter=lfs diff=lfs merge=lfs
+*.[Aa][Ii][Ff][Ff]									-text filter=lfs diff=lfs merge=lfs
+*.[Ii][[Tt][Tt]]										-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Oo][Dd]								-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Pp]3										-text filter=lfs diff=lfs merge=lfs
+*.[Oo][Gg][Gg]									-text filter=lfs diff=lfs merge=lfs
+*.[Ss]3[Mm]										-text filter=lfs diff=lfs merge=lfs
+*.[Ww][Aa][Vv]									-text filter=lfs diff=lfs merge=lfs
+*.[Xx][Mm]										-text filter=lfs diff=lfs merge=lfs
+*.[Bb][Aa][Nn][Kk]							-text filter=lfs diff=lfs merge=lfs
+
 #Video												
-*.[Aa][Ss][Ff]										lfs
-*.[Aa][Vv][Ii]										lfs
-*.[Ff][Ll][Vv]										lfs
-*.[Mm][Oo][Vv]								lfs
-*.[Mm][Pp]4										lfs
-*.[Mm][Pp][Ee][Gg]							lfs
-*.[Mm][Pp][Gg]								lfs
-*.[Oo][Gg][Vv]									lfs
-*.[Ww][Mm][Vv]								lfs
+*.[Aa][Ss][Ff]										-text filter=lfs diff=lfs merge=lfs
+*.[Aa][Vv][Ii]										-text filter=lfs diff=lfs merge=lfs
+*.[Ff][Ll][Vv]										-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Oo][Vv]								-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Pp]4										-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Pp][Ee][Gg]							-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Pp][Gg]								-text filter=lfs diff=lfs merge=lfs
+*.[Oo][Gg][Vv]									-text filter=lfs diff=lfs merge=lfs
+*.[Ww][Mm][Vv]								-text filter=lfs diff=lfs merge=lfs
 
 #3D Object
-*.3[Dd][Mm]										lfs
-*.3[Dd][Ss]											lfs
-*.[Bb][Ll][Ee][Nn][Dd]						lfs
-*.[Cc]4[Dd]										lfs
-*.[Cc][Oo][Ll][Ll][Aa][Dd][Aa]			lfs
-*.[Dd][Aa][Ee]									lfs
-*.[Dd][Xx][Ff]									lfs
-*.[Ff][Bb][Xx]										lfs
-*.[Ff][Bb][Xx]										lfs
-*.[Jj][Aa][Ss]										lfs
-*.[Ll][Ww][Ss]									lfs
-*.[Ll][Xx][Oo]										lfs
-*.[Mm][Aa]										lfs
-*.[Mm][Aa][Xx]									lfs
-*.[Mm][Bb]										lfs
-*.[Oo][Bb][Jj]										lfs
-*.[Pp][Ll][Yy]										lfs
-*.[Ss][Kk][Pp]									lfs
-*.[Ss][Tt][Ll]										lfs
-*.[Zz][Tt][Ll]										lfs
+*.3[Dd][Mm]										-text filter=lfs diff=lfs merge=lfs
+*.3[Dd][Ss]											-text filter=lfs diff=lfs merge=lfs
+*.[Bb][Ll][Ee][Nn][Dd]						-text filter=lfs diff=lfs merge=lfs
+*.[Cc]4[Dd]										-text filter=lfs diff=lfs merge=lfs
+*.[Cc][Oo][Ll][Ll][Aa][Dd][Aa]			-text filter=lfs diff=lfs merge=lfs
+*.[Dd][Aa][Ee]									-text filter=lfs diff=lfs merge=lfs
+*.[Dd][Xx][Ff]									-text filter=lfs diff=lfs merge=lfs
+*.[Ff][Bb][Xx]										-text filter=lfs diff=lfs merge=lfs
+*.[Ff][Bb][Xx]										-text filter=lfs diff=lfs merge=lfs
+*.[Jj][Aa][Ss]										-text filter=lfs diff=lfs merge=lfs
+*.[Ll][Ww][Ss]									-text filter=lfs diff=lfs merge=lfs
+*.[Ll][Xx][Oo]										-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Aa]										-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Aa][Xx]									-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Bb]										-text filter=lfs diff=lfs merge=lfs
+*.[Oo][Bb][Jj]										-text filter=lfs diff=lfs merge=lfs
+*.[Pp][Ll][Yy]										-text filter=lfs diff=lfs merge=lfs
+*.[Ss][Kk][Pp]									-text filter=lfs diff=lfs merge=lfs
+*.[Ss][Tt][Ll]										-text filter=lfs diff=lfs merge=lfs
+*.[Zz][Tt][Ll]										-text filter=lfs diff=lfs merge=lfs
 
 #Compacted Archive
-*.7[Zz]												lfs
-*.[Bb][Zz]2											lfs
-*.[Gg][Zz]											lfs
-*.[Rr][Aa][Rr]									lfs
-*.[Tt][Aa][Rr]										lfs
-*.[Zz][Ii][Pp]										lfs
+*.7[Zz]												-text filter=lfs diff=lfs merge=lfs
+*.[Bb][Zz]2											-text filter=lfs diff=lfs merge=lfs
+*.[Gg][Zz]											-text filter=lfs diff=lfs merge=lfs
+*.[Rr][Aa][Rr]									-text filter=lfs diff=lfs merge=lfs
+*.[Tt][Aa][Rr]										-text filter=lfs diff=lfs merge=lfs
+*.[Zz][Ii][Pp]										-text filter=lfs diff=lfs merge=lfs
 
 #Libraries
-*.[Dd][Ll][Ll]										lfs
-*.[Pp][Dd][Bb]									lfs
-*.Pdb													lfs
-*.[Mm][Dd][Bb]								lfs
-*.[Ss][Oo]											lfs
+*.[Dd][Ll][Ll]										-text filter=lfs diff=lfs merge=lfs
+*.[Pp][Dd][Bb]									-text filter=lfs diff=lfs merge=lfs
+*.Pdb													-text filter=lfs diff=lfs merge=lfs
+*.[Mm][Dd][Bb]								-text filter=lfs diff=lfs merge=lfs
+*.[Ss][Oo]											-text filter=lfs diff=lfs merge=lfs
 
 #Etc
-*.[Aa]													lfs
-*.[Tt][Tt][Ff]										lfs
-*.[Rr][Nn][Ss]									lfs
-*.[Rr][Ee][Aa][Ss][Oo][Nn]				lfs
-*.[Dd][Oo][Cc]									lfs
-*.[Dd][Oo][Cc][Xx]							lfs
-*.[Dd][Oo][Tt]									lfs
-*.[Dd][Oo][Tt]									lfs
-*.[Pp][Dd][Ff]									lfs
-*.[Pp][Dd][Ff]									lfs
-*.[Rr][Tt][Ff]										lfs
-*.[Rr][Tt][Ff]										lfs
+*.[Aa]													-text filter=lfs diff=lfs merge=lfs
+*.[Tt][Tt][Ff]										-text filter=lfs diff=lfs merge=lfs
+*.[Rr][Nn][Ss]									-text filter=lfs diff=lfs merge=lfs
+*.[Rr][Ee][Aa][Ss][Oo][Nn]				-text filter=lfs diff=lfs merge=lfs
+*.[Dd][Oo][Cc]									-text filter=lfs diff=lfs merge=lfs
+*.[Dd][Oo][Cc][Xx]							-text filter=lfs diff=lfs merge=lfs
+*.[Dd][Oo][Tt]									-text filter=lfs diff=lfs merge=lfs
+*.[Dd][Oo][Tt]									-text filter=lfs diff=lfs merge=lfs
+*.[Pp][Dd][Ff]									-text filter=lfs diff=lfs merge=lfs
+*.[Pp][Dd][Ff]									-text filter=lfs diff=lfs merge=lfs
+*.[Rr][Tt][Ff]										-text filter=lfs diff=lfs merge=lfs
+*.[Rr][Tt][Ff]										-text filter=lfs diff=lfs merge=lfs
 
 # Collapse Unity-generated files on GitHub
 *.unity												linguist-generated
