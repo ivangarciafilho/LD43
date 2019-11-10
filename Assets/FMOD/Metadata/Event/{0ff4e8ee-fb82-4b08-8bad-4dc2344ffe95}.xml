@@ -54,7 +54,7 @@
             <destination>{902cad66-5159-415f-931f-a019708bb85c}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{f6bff7af-bc95-4926-9633-4dca55f38c44}</destination>
+            <destination>{3a9b1690-a562-4aa0-917b-2e7263731d8a}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{561dc084-5ad9-48f4-b884-385a3bcb5235}">
@@ -134,6 +134,12 @@
         </relationship>
     </object>
     <object class="MultiSound" id="{ae8fac62-6846-46d0-85cc-4c9cde57c76b}">
+        <property name="triggerProbabilityEnabled">
+            <value>true</value>
+        </property>
+        <property name="triggerProbability">
+            <value>80</value>
+        </property>
         <property name="start">
             <value>0.27604593929450338</value>
         </property>

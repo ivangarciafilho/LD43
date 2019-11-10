@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4c95808d87163c745b2b6c9f917e5a79
+timeCreated: 1514741181
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - resultCube: {fileID: 8900000, guid: 8c16b1abc0c1eaf44a9bce7a1a068c84, type: 2}
+  - currentCamera: {instanceID: 0}
+  - targetTexture: {instanceID: 0}
+  - madGoatDebugger: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

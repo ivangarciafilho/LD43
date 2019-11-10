@@ -54,7 +54,7 @@
             <destination>{762e2720-4d80-45f2-8e92-c0128778ee78}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{f6bff7af-bc95-4926-9633-4dca55f38c44}</destination>
+            <destination>{3a9b1690-a562-4aa0-917b-2e7263731d8a}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{43925b9c-b203-42a7-aaf0-8acc8cd3effe}">
@@ -195,6 +195,7 @@
         <relationship name="effects">
             <destination>{8421c478-0b15-4e0a-a78f-ca067fab1bdb}</destination>
             <destination>{56d57e37-ac7e-449f-bae6-510d7d7278bf}</destination>
+            <destination>{e7a82b85-0044-4879-b9b8-d25eca741ffc}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{e545d766-937b-41f7-a4d0-65a5a7b9ed25}"/>
@@ -265,6 +266,11 @@
         </property>
         <property name="soundSize">
             <value>1</value>
+        </property>
+    </object>
+    <object class="LoudnessMeter" id="{e7a82b85-0044-4879-b9b8-d25eca741ffc}">
+        <property name="loudnessTarget">
+            <value>-16</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{163277c4-01c1-4714-bcd9-33e49850d95b}">

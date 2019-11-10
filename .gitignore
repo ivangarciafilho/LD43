@@ -1,105 +1,99 @@
 # =============== #
 # Unity generated #
 # =============== #
-[Tt]emp/
-[Ll]ibrary/
-[Uu]nityPackageManager/
-[Bb]uild*/
-[Ss]creenshots/
-[Rr]ecord*/
-[Ll]og*/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ee]xported[Oo]bj/
+/*[Bb]uild*/
+/*[Ll]og*/
+/[Uu]nity[Pp]ackage[Mm]anager/
+/[Ss]creenshot*/
+/[Rr]ecord*/
+/[Aa]ssets/[Aa]sset[Ss]tore[Tt]ool*/
+/[Mm]emory[Cc]apture*/
+
+# Builds
+*.apk
+*.exe
+*.unitypackage
+
+# Never ignore Asset meta data
+!/[Aa]ssets/**/*.meta
+
+# TextMesh Pro files
+[Aa]ssets/TextMesh*Pro/
+
+# Gradle cache directory
+.gradle/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
-ExportedObj/
-obj/
-*.svd
-*.userprefs
-/*.csproj
-*.pidb
-*.suo
-/*.sln
-*.user
-*.unityproj
+.Consulo
+.console
 *.csproj
-*.booproj
-/*#.csproj
-*#.dll
-.vs/
-*.bat
-*.zip
-*.7z
-*.rar
+*.unityproj
 *.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
 *log
-fmod_editor.log
+*fmod_editor.log
+
+# Visual Studio cache directory
+.vs/
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D generated file on crash reports
+sysinfo.txt
+*.stackdump
+
+# Crashlytics generated file
+crashlytics-build.properties
+
+# Compressed Archives
+*.zip
+*.rar
+*.7z
+*.bz
+*.bz2
+*.gz
+*.tar
 
 # ============ #
 # OS generated #
 # ============ #
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+Icon?
+*.DS_Store*
+*.DS_Store?
+*._*
+*.Spotlight-V100
+*.Trashes
 
-Assets/ConsolePro/
+*ehthumbs.db
+*ehthumbs_vista.db
+*.stackdump
 
-Assets/Heureka/
-
-Assets/Plugins/EModules/
-
-Assets/Plugins/EModules.meta
-
-Assets/ConsolePro.meta
-
-Assets/Heureka.meta
-
-Assets/AutoSave/
-
-Assets/Grids MX/
-
-Assets/Mad Compile Time Optimizer/
-
-Assets/Viscera/
-
-Assets/AutoSave\.meta
-
-Assets/Grids MX\.meta
-
-Assets/Viscera\.meta
-
-Assets/Mad Compile Time Optimizer\.meta
-
-Assets/SceneOrganizer/
-
-Assets/ScriptExecReorderManager/
-
-Assets/SceneOrganizer\.meta
-
-Assets/ScriptExecReorderManager\.meta
-
-Assets/FindMissingComponents/
-
-Assets/FindMissingComponents\.meta
-
-Assets/FindPrefabsWithComponent\.meta
-
-Assets/FindPrefabsWithComponent/
-
-Assets/PrimitivesPro/
-
-Assets/PrimitivesPro\.meta
-
-Assets/MeshMaker/
-
-Assets/MeshMaker\.meta
-
-Assets/ProDrawCallOptimizer/
-
-Assets/ProDrawCallOptimizer\.meta
-
-Assets/MeshBaker/
+*$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+*.bat

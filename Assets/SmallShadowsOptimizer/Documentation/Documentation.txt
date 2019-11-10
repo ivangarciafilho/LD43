@@ -1,0 +1,16 @@
+
+SmallShadowsOptimizer
+
+How does it work :
+First, add the SmallShadowOptimizer component to a GameObject containing a camera. When enabled it will gather all MeshRenderers ( skinned objects are ignored currently ) into 2 groups : static meshes (the ones marked as static in Unity), and dynamic meshes (all others), and retrieve their bounds. The bounds are tightly packed in order to be accessed by the C++ native plugin called REPlugin. The native plugin (REPlugin) checks the camera bounds versus the object bounds. A score is computed based on distance to camera and object bounds. If this score is above SizeThreshold, the object's shadowCastingMode will be turned to on, if not, it will be turned to off. Every frame, only the dynamic objects' set transforms are checked, and if the transforms changed, the bounds will be updated.
+
+Supported Platforms
+- Windows desktop, Android, iOS and Universal Windows Platform/Xbox One
+- note : for iOS, the C++ code is included, which in turn can be used to compile the native plugin to any platform by an able programmer.
+Issues:
+- does not work for skinned objects ( might be possible if requested )
+
+SmallShadowOptimizer.cs
+
+float SizeThreshold - size, as a function based on distance to camera and object bounds, under which objects will no longer cast shadows. Increase this to see more shadows
+Camera cameraToUse - perspective from which to calculate shadow visibility; only one camera can be used
