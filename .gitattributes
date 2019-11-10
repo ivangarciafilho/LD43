@@ -1,101 +1,181 @@
+# Macro for Unity YAML-based asset files.
+[attr]unityyaml -text merge=unityyamlmerge diff
+
+# Macro for all binary files that should use Git LFS.
+[attr]lfs -text filter=lfs diff=lfs merge=lfs
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
 # Unity
-*.cs diff=csharp text
-*.cginc text
-*.shader text
-# Unity YAML
-*.mat eol=lf
-*.anim eol=lf
-*.unity eol=lf
-*.prefab eol=lf
-*.physicsMaterial2D eol=lf
-*.physicsMaterial eol=lf
-*.asset eol=lf
-*.meta eol=lf
-*.controller eol=lf
-*.cubemap filter=lfs diff=lfs merge=lfs -text
-*.unitypackage filter=lfs diff=lfs merge=lfs -text
+*.cs														diff=csharptexteol=lf
+*.cginc												text
+*.shader												text
+
+# Unity YAML "mergeables" (hope so)
+*.unity												unityyaml
+*.prefab												unityyaml
+
+*.asset												unityyaml
+*.meta												unityyaml
+*.physicMaterial2D							unityyaml
+*.physicMaterial								unityyaml
+*.mat													unityyaml
+*.anim												unityyaml
+*.controller										unityyaml
+*.overrideController						unityyaml
+*.playable											unityyaml
+*.mask												unityyaml
+*.flare													unityyaml
+*.fontsettings									unityyaml
+*.guiskin												unityyaml
+*.giparams											unityyaml
+*.renderTexture								unityyaml
+*.spriteatlas										unityyaml
+*.terrainlayer									unityyaml
+*.mixer												unityyaml
+*.shadervariants								unityyaml
+*.preset												unityyaml
+*.asmdef											unityyaml
+
+*.lfs.*													lfs
+
+*.cubemap										lfs
+*.unitypackage									lfs
+
+# Unity YAML "UN_mergeables" (think so)
+*.bytes												text
+*[Ll]]ighting[Dd]ata.asset				-unityyaml lfs
+*[Tt]errain[Dd]ata.asset					-unityyaml lfs
+*-[Tt]errain.asset								-unityyaml lfs
+*-[Nn]av[Mm]esh.asset					-unityyaml lfs
+
 # Executable/Installer
-*.apk  filter=lfs diff=lfs merge=lfs -text
-*.exe  filter=lfs diff=lfs merge=lfs -text
+*.apk													lfs
+*.exe													lfs
+
 # Fonts
-*.otf filter=lfs diff=lfs merge=lfs -text
-*.ttf filter=lfs diff=lfs merge=lfs -text
+*.otf													fs
+*.ttf														lfs
+
 #Image
-*.bmp filter=lfs diff=lfs merge=lfs -text
-*.exr filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
-*.hdr filter=lfs diff=lfs merge=lfs -text
-*.iff filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.pict filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.psd filter=lfs diff=lfs merge=lfs -text
-*.tga filter=lfs diff=lfs merge=lfs -text
-*.tif filter=lfs diff=lfs merge=lfs -text
-*.tiff filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
-*.ai filter=lfs diff=lfs merge=lfs -text
+*.[Bb][Mm][Pp]								lfs
+*.[Ee][Xx][Rr]										lfs
+*.[Gg][Ii][Ff]										lfs
+*.[Hh][Dd][Rr]									lfs
+*.[Ii][Ff][Ff]										lfs
+*.[Jj][Pp][Gg]										lfs
+*.[Jj][Pp][Ee][Gg]								lfs
+*.[Pp][Ii][Cc][Tt]								lfs
+*.[Pp][Nn][Gg]									lfs
+*.[Pp][Ss][Dd]									lfs
+*.[Tt][Gg][Aa]									lfs
+*.[Tt][Ii][Ff]										lfs
+*.[Tt][Ii][Ff][Ff]									lfs
+*.[Gg][Ii][Ff]										lfs
+*.[Aa][Ii]												lfs
+
 #Audio
-*.aif filter=lfs diff=lfs merge=lfs -text
-*.aiff filter=lfs diff=lfs merge=lfs -text
-*.it filter=lfs diff=lfs merge=lfs -text
-*.mod filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
-*.ogg filter=lfs diff=lfs merge=lfs -text
-*.s3m filter=lfs diff=lfs merge=lfs -text
-*.wav filter=lfs diff=lfs merge=lfs -text
-*.xm filter=lfs diff=lfs merge=lfs -text
-#Video
-*.asf   filter=lfs diff=lfs merge=lfs -text
-*.avi   filter=lfs diff=lfs merge=lfs -text
-*.flv   filter=lfs diff=lfs merge=lfs -text
-*.mov   filter=lfs diff=lfs merge=lfs -text
-*.mp4   filter=lfs diff=lfs merge=lfs -text
-*.mpeg  filter=lfs diff=lfs merge=lfs -text
-*.mpg   filter=lfs diff=lfs merge=lfs -text
-*.ogv   filter=lfs diff=lfs merge=lfs -text
-*.wmv   filter=lfs diff=lfs merge=lfs -text
+*.[Aa][Ii][Ff]										lfs
+*.[Aa][Ii][Ff][Ff]									lfs
+*.[Ii][[Tt][Tt]]										lfs
+*.[Mm][Oo][Dd]								lfs
+*.[Mm][Pp]3										lfs
+*.[Oo][Gg][Gg]									lfs
+*.[Ss]3[Mm]										lfs
+*.[Ww][Aa][Vv]									lfs
+*.[Xx][Mm]										lfs
+*.[Bb][Aa][Nn][Kk]							lfs
+#Video												
+*.[Aa][Ss][Ff]										lfs
+*.[Aa][Vv][Ii]										lfs
+*.[Ff][Ll][Vv]										lfs
+*.[Mm][Oo][Vv]								lfs
+*.[Mm][Pp]4										lfs
+*.[Mm][Pp][Ee][Gg]							lfs
+*.[Mm][Pp][Gg]								lfs
+*.[Oo][Gg][Vv]									lfs
+*.[Ww][Mm][Vv]								lfs
+
 #3D Object
-*.3dm filter=lfs diff=lfs merge=lfs -text
-*.3ds filter=lfs diff=lfs merge=lfs -text
-*.blend filter=lfs diff=lfs merge=lfs -text
-*.c4d filter=lfs diff=lfs merge=lfs -text
-*.collada filter=lfs diff=lfs merge=lfs -text
-*.dae filter=lfs diff=lfs merge=lfs -text
-*.dxf filter=lfs diff=lfs merge=lfs -text
-*.fbx filter=lfs diff=lfs merge=lfs -text
-*.jas filter=lfs diff=lfs merge=lfs -text
-*.lws filter=lfs diff=lfs merge=lfs -text
-*.lxo filter=lfs diff=lfs merge=lfs -text
-*.ma filter=lfs diff=lfs merge=lfs -text
-*.max filter=lfs diff=lfs merge=lfs -text
-*.mb filter=lfs diff=lfs merge=lfs -text
-*.obj filter=lfs diff=lfs merge=lfs -text
-*.ply filter=lfs diff=lfs merge=lfs -text
-*.skp filter=lfs diff=lfs merge=lfs -text
-*.stl filter=lfs diff=lfs merge=lfs -text
-*.ztl filter=lfs diff=lfs merge=lfs -text
-# Compressed Archive
-*.7z   filter=lfs diff=lfs merge=lfs -text
-*.bz2  filter=lfs diff=lfs merge=lfs -text
-*.gz   filter=lfs diff=lfs merge=lfs -text
-*.rar  filter=lfs diff=lfs merge=lfs -text
-*.tar  filter=lfs diff=lfs merge=lfs -text
-*.zip  filter=lfs diff=lfs merge=lfs -text
-# Compiled Dynamic Library
-*.dll  filter=lfs diff=lfs merge=lfs -text
-*.pdb  filter=lfs diff=lfs merge=lfs -text
-*.so   filter=lfs diff=lfs merge=lfs -text
-#ETC
-*.a filter=lfs diff=lfs merge=lfs -text
-*.pdf filter=lfs diff=lfs merge=lfs -text
-*.ttf filter=lfs diff=lfs merge=lfs -text
-*.rns filter=lfs diff=lfs merge=lfs -text
-*.reason filter=lfs diff=lfs merge=lfs -text
+*.3[Dd][Mm]										lfs
+*.3[Dd][Ss]											lfs
+*.[Bb][Ll][Ee][Nn][Dd]						lfs
+*.[Cc]4[Dd]										lfs
+*.[Cc][Oo][Ll][Ll][Aa][Dd][Aa]			lfs
+*.[Dd][Aa][Ee]									lfs
+*.[Dd][Xx][Ff]									lfs
+*.[Ff][Bb][Xx]										lfs
+*.[Ff][Bb][Xx]										lfs
+*.[Jj][Aa][Ss]										lfs
+*.[Ll][Ww][Ss]									lfs
+*.[Ll][Xx][Oo]										lfs
+*.[Mm][Aa]										lfs
+*.[Mm][Aa][Xx]									lfs
+*.[Mm][Bb]										lfs
+*.[Oo][Bb][Jj]										lfs
+*.[Pp][Ll][Yy]										lfs
+*.[Ss][Kk][Pp]									lfs
+*.[Ss][Tt][Ll]										lfs
+*.[Zz][Tt][Ll]										lfs
+
+#Compacted Archive
+*.7[Zz]												lfs
+*.[Bb][Zz]2											lfs
+*.[Gg][Zz]											lfs
+*.[Rr][Aa][Rr]									lfs
+*.[Tt][Aa][Rr]										lfs
+*.[Zz][Ii][Pp]										lfs
+
+#Libraries
+*.[Dd][Ll][Ll]										lfs
+*.[Pp][Dd][Bb]									lfs
+*.Pdb													lfs
+*.[Mm][Dd][Bb]								lfs
+*.[Ss][Oo]											lfs
+
+#Etc
+*.[Aa]													lfs
+*.[Tt][Tt][Ff]										lfs
+*.[Rr][Nn][Ss]									lfs
+*.[Rr][Ee][Aa][Ss][Oo][Nn]				lfs
+*.[Dd][Oo][Cc]									lfs
+*.[Dd][Oo][Cc][Xx]							lfs
+*.[Dd][Oo][Tt]									lfs
+*.[Dd][Oo][Tt]									lfs
+*.[Pp][Dd][Ff]									lfs
+*.[Pp][Dd][Ff]									lfs
+*.[Rr][Tt][Ff]										lfs
+*.[Rr][Tt][Ff]										lfs
+
 # Collapse Unity-generated files on GitHub
-*.asset linguist-generated
-*.mat linguist-generated
-*.meta linguist-generated
-*.prefab linguist-generated
-*.unity linguist-generated
+*.unity												linguist-generated
+*.prefab												linguist-generated
+*.asset												linguist-generated
+*.meta												linguist-generated
+*.physicMaterial2D							linguist-generated
+*.physicMaterial								linguist-generated
+*.mat													linguist-generated
+*.anim												linguist-generated
+*.controller										linguist-generated
+*.overrideController						linguist-generated
+*.playable											linguist-generated
+*.mask												linguist-generated
+*.flare													linguist-generated
+*.fontsettings									linguist-generated
+*.guiskin												linguist-generated
+*.giparams											linguist-generated
+*.renderTexture								linguist-generated
+*.spriteatlas										linguist-generated
+*.terrainlayer									linguist-generated
+*.mixer												linguist-generated
+*.shadervariants								linguist-generated
+*.preset												linguist-generated
+*.asmdef											linguist-generated
+*.lfs.*													linguist-generated
+*.cubemap										linguist-generated
+*.unitypackage									linguist-generated
+*[Ll]]ighting[Dd]ata.asset				linguist-generated
+*[Tt]errain[Dd]ata.asset					linguist-generated
+*-[Tt]errain.asset								linguist-generated
+*-[Nn]av[Mm]esh.asset					linguist-generated
