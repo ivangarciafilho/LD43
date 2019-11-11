@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# RCS1049: Simplify boolean comparison.
+dotnet_diagnostic.RCS1049.severity = silent
+
+# S1125: Boolean literals should not be redundant
+dotnet_diagnostic.S1125.severity = silent
